@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { CvComponent } from './cv/cv.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { AboutComponent } from './Pages/about/about.component';
+import { CvComponent } from './Pages/cv/cv.component';
+import { ProjectsComponent } from './Pages/projects/projects.component';
+import { ContactComponent } from './Pages/contact/contact.component';
 
 
 @Component({
