@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.sass'
+  styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 

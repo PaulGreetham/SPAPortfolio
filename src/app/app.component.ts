@@ -13,7 +13,7 @@ import { ContactComponent } from './Pages/contact/contact.component';
   standalone: true,
   imports: [CommonModule, RouterOutlet, HomeComponent, AboutComponent, CvComponent, ProjectsComponent, ContactComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'SPAPortfolio';
