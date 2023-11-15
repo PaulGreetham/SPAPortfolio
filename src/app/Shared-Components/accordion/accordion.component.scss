@@ -1,17 +1,16 @@
-nav {
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
+@import '../../Shared-Styles/_fonts';
+
+.accordion-buttons {
+  display: flex;
 }
 
 button {
-  font-family: monospace;
+  font-family: $primary-font;
   font-size: 18px;
-  width: 160px;
+  width: 150px;
   height: 60px;
   background-color: transparent;
-
+  margin-left: 4px;
   border: 0;
   border-radius: 8px;
 

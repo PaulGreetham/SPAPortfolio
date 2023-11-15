@@ -6,7 +6,7 @@ import { AboutComponent } from './Pages/about/about.component';
 import { ExperienceComponent } from './Pages/experience/experience.component';
 import { ProjectsComponent } from './Pages/projects/projects.component';
 import { ContactComponent } from './Pages/contact/contact.component';
-import { NavbarComponent } from "./Styling/navbar/navbar.component";
+import { NavbarComponent } from "./Shared-Components/navbar/navbar.component";
 
 
 @Component({
