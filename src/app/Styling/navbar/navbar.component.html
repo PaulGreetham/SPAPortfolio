@@ -1,9 +1,7 @@
 <nav>
-  <div class="nav-buttons">
-    <button (click)="selectSection('home')">Home</button>
-    <button (click)="selectSection('about')">About</button>
-    <button (click)="selectSection('cv')">CV</button>
-    <button (click)="selectSection('projects')">Projects</button>
-    <button (click)="selectSection('contact')">Contact</button>
-  </div>
+  <button (click)="navigateTo('home')">Home</button>
+  <button (click)="navigateTo('about')">About</button>
+  <button (click)="navigateTo('cv')">CV</button>
+  <button (click)="navigateTo('projects')">Projects</button>
+  <button (click)="navigateTo('contact')">Contact</button>
 </nav>

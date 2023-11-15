@@ -4,10 +4,10 @@ import { AccordionComponent } from "../../Styling/accordion/accordion.component"
 @Component({
     selector: 'app-cv',
     standalone: true,
-    templateUrl: './cv.component.html',
-    styleUrl: './cv.component.scss',
+    templateUrl: './experience.component.html',
+    styleUrl: './experience.component.scss',
     imports: [CommonModule, AccordionComponent]
 })
-export class CvComponent {
+export class ExperienceComponent {
 
 }

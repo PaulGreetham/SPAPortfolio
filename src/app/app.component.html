@@ -1,15 +1,3 @@
-<!-- Navigation -->
-<nav>
-  <button (click)="selectedSection = 'home'">Home</button>
-  <button (click)="selectedSection = 'about'">About</button>
-  <button (click)="selectedSection = 'cv'">CV</button>
-  <button (click)="selectedSection = 'projects'">Projects</button>
-  <button (click)="selectedSection = 'contact'">Contact</button>
-</nav>
+<app-navbar></app-navbar>
 
-<!-- Section Components -->
-<app-home *ngIf="selectedSection === 'home'"></app-home>
-<app-about *ngIf="selectedSection === 'about'"></app-about>
-<app-cv *ngIf="selectedSection === 'cv'"></app-cv>
-<app-projects *ngIf="selectedSection === 'projects'"></app-projects>
-<app-contact *ngIf="selectedSection === 'contact'"></app-contact>
+<router-outlet></router-outlet>
