@@ -1,28 +1,11 @@
-<!-- Accordion Buttons -->
-<div class="accordion-buttons">
-  <button (click)="toggleSection('Profile')">Profile</button>
-  <button (click)="toggleSection('Education')">Education</button>
-  <button (click)="toggleSection('Professional')">Professional</button>
-  <button (click)="toggleSection('Interests')">Interests</button>
-  <!-- More buttons -->
-</div>
+<div class="accordion-container">
+  <div class="accordion-buttons">
+    <button *ngFor="let item of accordionItems" (click)="toggleSection(item.title)">{{ item.title }}</button>
+  </div>
 
-<!-- Accordion Content -->
-<div class="accordion-content">
-  <div *ngIf="openSection === 'Profile'" class="content">
-    <!-- Content for Section 1 -->
-    <h2>Content 1 here</h2>
-  </div>
-  <div *ngIf="openSection === 'Education'" class="content">
-    <!-- Content for Section 2 -->
-    <h2>Content 2 here</h2>
-  </div>
-  <div *ngIf="openSection === 'Professional'" class="content">
-    <!-- Content for Section 3 -->
-    <h2>Content 3 here</h2>
-  </div>
-  <div *ngIf="openSection === 'Interests'" class="content">
-    <!-- Content for Section 4 -->
-    <h2>Content 4 here</h2>
+  <div class="accordion-content">
+    <div *ngFor="let item of accordionItems" [hidden]="openSection !== item.title" class="content">
+      <h2>{{ item.content }}</h2>
+    </div>
   </div>
 </div>

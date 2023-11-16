@@ -9,5 +9,10 @@ import { AccordionComponent } from "../../Shared-Components/accordion/accordion.
     imports: [CommonModule, AccordionComponent]
 })
 export class ExperienceComponent {
-
+  experienceAccordionItems = [
+    { title: 'Profile', content: 'Content 1 here' },
+    { title: 'Education', content: 'Content 2 here' },
+    { title: 'Professional', content: 'Content 3 here' },
+    { title: 'Interests', content: 'Content 4 here' }
+  ];
 }

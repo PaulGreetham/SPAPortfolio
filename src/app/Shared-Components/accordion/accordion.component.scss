@@ -1,22 +1,49 @@
 @import '../../Shared-Styles/_fonts';
 
-.accordion-buttons {
-  display: flex;
+/* accordion.component.scss */
+/* Style for the accordion container */
+.accordion-container {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* Adjust the width of the left column as needed */
+  grid-column-gap: 20px; /* Adjust the gap between columns */
+  align-items: start; /* Align items to the top of each cell */
+  margin: 20px; /* Add margin for spacing */
+  height: 80%;
 }
 
+/* Style for the accordion buttons container (left column) */
+.accordion-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px; /* Add vertical spacing between buttons */
+}
+
+/* Style for the individual accordion buttons */
 button {
   font-family: $primary-font;
   font-size: 18px;
-  width: 150px;
-  height: 60px;
+  padding: 10px;
   background-color: transparent;
-  margin-left: 4px;
-  border: 0;
-  border-radius: 8px;
-
+  border: none;
+  cursor: pointer;
+  transition: scale 0.3s;
 
   &:hover {
-    cursor: pointer;
-    background-color: rgba(240, 240, 240);
+    scale: 0.95;
+    transition: scale 0.3s;
   }
+}
+
+/* Style for the accordion content container (right column) */
+.accordion-content {
+  grid-column: 2; /* Content container takes the second column */
+  height: 100%;
+}
+
+/* Style for individual content sections */
+.content {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; /* Add spacing between content sections */
 }

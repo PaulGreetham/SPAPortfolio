@@ -1,1 +1,8 @@
 @import '../../Shared-Styles/_fonts';
+
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin: 30px;
+}

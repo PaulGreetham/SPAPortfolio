@@ -15,9 +15,11 @@ button {
   padding-left: 24px;
   margin: 12px;
   border: 0;
+  transition: scale 0.3s;
 
   &:hover {
     cursor: pointer;
     scale: 0.95;
+    transition: scale 0.3s;
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './accordion.component.scss'
 })
 export class AccordionComponent {
+  @Input() accordionItems: { title: string, content: string }[] = [];
   openSection: string | null = null;
 
   toggleSection(section: string) {
