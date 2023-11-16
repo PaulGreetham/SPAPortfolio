@@ -9,17 +9,15 @@ nav {
 
 button {
   font-family: $primary-font;
-  font-size: 18px;
-  width: 150px;
-  height: 60px;
+  font-size: 24px;
+  height: 40px;
   background-color: transparent;
-  margin-left: 4px;
+  padding-left: 24px;
+  margin: 12px;
   border: 0;
-  border-radius: 8px;
-
 
   &:hover {
     cursor: pointer;
-    background-color: rgba(240, 240, 240);
+    scale: 0.95;
   }
 }
