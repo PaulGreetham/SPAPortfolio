@@ -1,11 +1,18 @@
 <div class="accordion-container">
   <div class="accordion-buttons">
-    <button *ngFor="let item of accordionItems" (click)="toggleSection(item.title)">{{ item.title }}</button>
+    <button
+      *ngFor="let item of accordionItems"
+      (click)="toggleSection(item.title)"
+      [class.open]="openSection === item.title"
+      [class.closed]="openSection !== item.title"
+    >
+      <span>{{ item.title }}</span>
+    </button>
   </div>
 
   <div class="accordion-content">
     <div *ngFor="let item of accordionItems" [hidden]="openSection !== item.title" class="content">
-      <h2>{{ item.content }}</h2>
+      <div [innerHTML]="item.content"></div>
     </div>
   </div>
 </div>

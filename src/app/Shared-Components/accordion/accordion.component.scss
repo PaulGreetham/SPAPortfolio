@@ -23,15 +23,40 @@
 button {
   font-family: $primary-font;
   font-size: 18px;
+  width: 100%;
   padding: 10px;
   background-color: transparent;
   border: none;
-  cursor: pointer;
   transition: scale 0.3s;
 
-  &:hover {
-    scale: 0.95;
+  span {
+    display: flex;
+    justify-content: flex-start;
     transition: scale 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      scale: 0.95;
+      transition: scale 0.3s;
+    }
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba(240, 240, 240); /* Change background color when button is clicked or focused */
+    outline: none; /* Remove the default focus outline */
+    transition: 0.3s ease-in-out;
+  }
+
+  /* Add styles when the button is in "open" state */
+  &.open {
+    background-color: rgba(240, 240, 240); /* Change background color when section is open */
+  }
+
+  /* Add styles when the button is in "closed" state */
+  &.closed {
+    background-color: transparent; /* Change background color to transparent when section is closed */
+    transition: 0.3s ease-in-out;
   }
 }
 
@@ -46,4 +71,15 @@ button {
   padding: 10px;
   border: 1px solid #ccc;
   margin-bottom: 10px; /* Add spacing between content sections */
+  opacity: 0; /* Initially set opacity to 0 to hide content */
+  animation: fadeIn 0.6s ease-in-out forwards; /* Apply fadeIn animation */
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
