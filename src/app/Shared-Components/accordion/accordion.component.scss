@@ -22,7 +22,7 @@
 /* Style for the individual accordion buttons */
 button {
   font-family: $primary-font;
-  font-size: 18px;
+  font-size: 24px;
   width: 100%;
   padding: 10px;
   background-color: transparent;
@@ -36,26 +36,24 @@ button {
     cursor: pointer;
 
     &:hover {
-      scale: 0.95;
+      scale: 0.98;
       transition: scale 0.3s;
     }
   }
 
   &:active,
   &:focus {
-    background-color: rgba(240, 240, 240); /* Change background color when button is clicked or focused */
-    outline: none; /* Remove the default focus outline */
+    background-color: rgba(240, 240, 240);
+    outline: none;
     transition: 0.3s ease-in-out;
   }
 
-  /* Add styles when the button is in "open" state */
   &.open {
-    background-color: rgba(240, 240, 240); /* Change background color when section is open */
+    background-color: rgba(240, 240, 240);
   }
 
-  /* Add styles when the button is in "closed" state */
   &.closed {
-    background-color: transparent; /* Change background color to transparent when section is closed */
+    background-color: transparent;
     transition: 0.3s ease-in-out;
   }
 }
