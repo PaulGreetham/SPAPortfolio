@@ -4,8 +4,8 @@
 /* Style for the accordion container */
 .accordion-container {
   display: grid;
-  grid-template-columns: 200px 1fr; /* Adjust the width of the left column as needed */
-  grid-column-gap: 20px; /* Adjust the gap between columns */
+  grid-template-columns: 250px 1fr; /* Adjust the width of the left column as needed */
+  grid-column-gap: 40px; /* Adjust the gap between columns */
   align-items: start; /* Align items to the top of each cell */
   margin: 20px; /* Add margin for spacing */
   height: 80%;
@@ -50,6 +50,9 @@ button {
 
   &.open {
     background-color: rgba(240, 240, 240);
+    padding: 18px;
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
   }
 
   &.closed {
