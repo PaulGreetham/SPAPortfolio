@@ -7,6 +7,7 @@ import { ExperienceComponent } from './Pages/experience/experience.component';
 import { ProjectsComponent } from './Pages/projects/projects.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { NavbarComponent } from "./Shared-Components/navbar/navbar.component";
+import { CardComponent } from './Shared-Components/card/card.component';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { NavbarComponent } from "./Shared-Components/navbar/navbar.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, RouterOutlet, HomeComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, NavbarComponent]
+    imports: [CommonModule, RouterOutlet, HomeComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, NavbarComponent, CardComponent]
 })
 export class AppComponent {
   title = 'SPAPortfolio';

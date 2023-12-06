@@ -1,5 +1,10 @@
 @import '../../Shared-Styles/_fonts';
 
+.projects-page {
+  width: 100%;
+  height: 80%;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -9,4 +14,12 @@ header {
 
 h1 {
   font-size: 60px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between; /* Adjust this as needed */
+  flex-wrap: wrap;
+
+  margin: 2rem;
 }
