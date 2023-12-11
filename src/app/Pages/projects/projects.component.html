@@ -4,6 +4,6 @@
   </header>
 
   <div class="cards-container">
-    <app-card *ngFor="let card of cards" [content]="card" [cardId]="card.id"></app-card>
+    <app-card *ngFor="let card of cards" [content]="card" [cardId]="card.id" [animationDelayClass]="card.animationClass"></app-card>
   </div>
 </section>
