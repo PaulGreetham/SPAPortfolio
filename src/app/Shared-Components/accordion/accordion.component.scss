@@ -28,6 +28,20 @@ button {
   background-color: transparent;
   border: none;
   transition: scale 0.3s;
+  animation: fadeInFromLeft 0.5s ease-out forwards;
+  opacity: 0; /* Ensure the button is initially invisible */
+  animation-delay: calc(0.5s + var(--index) * 0.25s);
+
+  @keyframes fadeInFromLeft {
+    from {
+      transform: translateX(-30px); /* Adjust the starting position */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
   span {
     display: flex;

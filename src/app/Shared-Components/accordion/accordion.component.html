@@ -1,10 +1,11 @@
 <div class="accordion-container">
   <div class="accordion-buttons">
     <button
-      *ngFor="let item of accordionItems"
+      *ngFor="let item of accordionItems; let i = index"
       (click)="toggleSection(item.title)"
       [class.open]="openSection === item.title"
       [class.closed]="openSection !== item.title"
+      [style.--index]="i"
     >
       <span>{{ item.title }}</span>
     </button>

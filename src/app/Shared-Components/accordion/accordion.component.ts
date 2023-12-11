@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class AccordionComponent {
   @Input() accordionItems: { title: string, content: string }[] = [];
   openSection: string | null = null;
+  i: any;
 
   toggleSection(section: string) {
     this.openSection = (this.openSection === section) ? null : section;
