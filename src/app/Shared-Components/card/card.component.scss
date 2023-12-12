@@ -2,13 +2,13 @@
   height: 100%;
   width: 100%;
   border: 1px solid black;
-  animation: slideUp 0.5s ease-out;
+  animation: fadeInFromBottom 0.5s ease-out forwards;
   animation-fill-mode: both;
 }
 
-@keyframes slideUp {
+@keyframes fadeInFromBottom {
   from {
-    transform: translateY(100%);
+    transform: translateY(30px);
     opacity: 0;
   }
   to {
@@ -17,7 +17,7 @@
   }
 }
 
-.animate-delay-1 { animation-delay: 0.25s; }
-.animate-delay-2 { animation-delay: 0.5s; }
-.animate-delay-3 { animation-delay: 0.75s; }
-.animate-delay-4 { animation-delay: 1s; }
+.animate-delay-1 { animation-delay: 1s; }
+.animate-delay-2 { animation-delay: 1.25s; }
+.animate-delay-3 { animation-delay: 1.5s; }
+.animate-delay-4 { animation-delay: 1.75s; }
