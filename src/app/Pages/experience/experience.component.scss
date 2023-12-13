@@ -1,5 +1,11 @@
 @import '../../Shared-Styles/_fonts';
 
+:host {
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fill-available;
+}
+
 header {
   display: flex;
   align-items: center;

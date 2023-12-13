@@ -1,19 +1,21 @@
 @import '../../Shared-Styles/_fonts';
 
-app-navbar {
-  height: auto;
+:host {
+  display: flex;
+  width: 100%;
+  height: 10%;
 }
 
 nav {
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;}
+  width: 100%;
+}
 
 button {
   font-family: $primary-font;
   font-size: 24px;
-  height: 40px;
   background-color: transparent;
   padding-left: 24px;
   margin: 12px;

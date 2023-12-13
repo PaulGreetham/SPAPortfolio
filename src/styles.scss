@@ -1,19 +1,15 @@
 @import 'app/Shared-Styles/_fonts.scss';
 @import 'app/Shared-Styles/_sizes';
 
-body {
+html, body {
   font-family: $primary-font;
-
-  width: 100vw;
-  height: 100vh;
-
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; // Prevents scrolling if not needed
 }
 
-header {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  margin: 30px;
+* {
+  box-sizing: border-box; // Ensures padding and borders are included in total width and height
 }
