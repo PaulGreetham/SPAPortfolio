@@ -9,27 +9,27 @@
 header {
   display: flex;
   align-items: center;
-  height: 40vh;
+  height: 20vh;
   padding: 2rem;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 5rem;
   margin: 0;
 
   opacity: 0;
-  transform: translateX(-30px);
-  animation: fadeInFromLeft 0.5s ease-out;
+  transform: translate(-30px);
+  animation: fadeInFromTop 1s ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeInFromLeft {
+@keyframes fadeInFromTop {
   from {
-    transform: translateX(-25px); /* Adjust for desired starting position */
+    transform: translateY(-75px); /* Adjust for desired starting position */
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -39,6 +39,67 @@ h1 {
   justify-content: space-between; /* Adjust this as needed */
   flex-wrap: wrap;
 
-  height: 20vh;
+  height: 70vh;
   padding: 2rem;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  text-align: center;
+  margin-block: 2rem;
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 1rem);
+  margin-block: 2rem;
+  padding: 2rem;
+  border: 0.5px solid gray;
+  animation: fadeInFromBottom 1s ease-out forwards;
+  text-align: center;
+  transition: scale 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    scale: (0.97);
+    transition: scale 0.3s;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @keyframes fadeInFromBottom {
+    from {
+      transform: translateY(75px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
