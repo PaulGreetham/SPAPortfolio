@@ -40,6 +40,7 @@ h1 {
   flex-wrap: wrap;
 
   height: 70vh;
+  margin-inline: 2rem;
   padding: 2rem;
 }
 
@@ -53,6 +54,26 @@ h1 {
 
   p {
     font-size: 1.5rem;
+  }
+}
+
+h6 {
+  font-size: 1.5rem;
+  margin-block: 2rem;
+  font-style: italic;
+  font-weight: lighter;
+
+  animation: fadeInDelay 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes fadeInDelay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
