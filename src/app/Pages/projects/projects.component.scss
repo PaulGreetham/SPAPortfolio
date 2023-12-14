@@ -3,18 +3,17 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: -webkit-fill-available;
+  height: 90vh;
 }
 
 header {
   display: flex;
   align-items: center;
-  height: 200px;
-  margin: 30px;
+  margin: 2rem;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 5rem;
   opacity: 0; /* Ensure the element is initially invisible */
   transform: translateX(-30px); /* Initial horizontal position */
   animation: fadeInFromLeft 0.5s ease-out;
@@ -37,10 +36,11 @@ h1 {
   justify-content: space-between; /* Adjust this as needed */
   flex-wrap: wrap;
 
+  height: 100%;
   margin: 2rem;
   align-items: stretch;
 }
 
 app-card {
-  flex: 0 0 22%; /* Adjust this percentage to account for margins */
+  flex: 0 0 23%; /* Adjust this percentage to account for margins */
 }

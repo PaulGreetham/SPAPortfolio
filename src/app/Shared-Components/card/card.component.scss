@@ -1,9 +1,16 @@
 .card {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  border: 0.5px solid gray;
   animation: fadeInFromBottom 0.5s ease-out forwards;
   animation-fill-mode: both;
+  transition: scale 0.3s;
+  cursor: auto;
+
+  &:hover {
+    scale: 0.95;
+    transition: scale 0.3s;
+  }
 }
 
 @keyframes fadeInFromBottom {

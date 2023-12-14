@@ -1,19 +1,20 @@
 @import '../../Shared-Styles/_fonts';
 
-.app-home {
-  width: 100vw;
-  height: 100vh;
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
 }
 
 header {
   display: flex;
   align-items: center;
-  height: 200px;
+  height: 16rem;
   margin: 2rem;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 5rem;
   opacity: 0; /* Ensure the element is initially invisible */
   transform: translateX(-30px); /* Initial horizontal position */
   animation: fadeInFromLeft 0.5s ease-out;

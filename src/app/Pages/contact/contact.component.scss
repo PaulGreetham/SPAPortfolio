@@ -1,10 +1,16 @@
 @import '../../Shared-Styles/_fonts';
 
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
 header {
   display: flex;
   align-items: center;
-  height: 200px;
-  margin: 30px;
+  height: 16rem;
+  margin: 2rem;
 }
 
 h1 {
