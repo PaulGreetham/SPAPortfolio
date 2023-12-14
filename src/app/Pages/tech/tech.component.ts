@@ -4,15 +4,15 @@ import { AccordionComponent } from "../../Shared-Components/accordion/accordion.
 @Component({
     selector: 'app-experience',
     standalone: true,
-    templateUrl: './experience.component.html',
-    styleUrl: './experience.component.scss',
+    templateUrl: './tech.component.html',
+    styleUrl: './tech.component.scss',
     imports: [CommonModule, AccordionComponent]
 })
-export class ExperienceComponent {
-  experienceAccordionItems = [
-    { title: 'Profile', content: 'Content 1 here' },
+export class TechComponent {
+  techAccordionItems = [
+    { title: 'Stack & Tools', content: 'Content 1 here' },
     { title: 'Education', content: 'Content 2 here' },
-    { title: 'Professional', content: 'Content 3 here' },
-    { title: 'Interests', content: 'Content 4 here' }
+    { title: 'Bootcamps', content: 'Content 3 here' },
+    { title: 'Professional', content: 'Content 4 here' }
   ];
 }

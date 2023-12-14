@@ -3,5 +3,14 @@
 </header>
 
 <section class="about-container">
-
+  <div class="dropdowns-container">
+    <div class="dropdown" *ngFor="let menu of menus">
+      <button [ngClass]="{'open': menu.isOpen, 'closed': !menu.isOpen}" (click)="toggleDropdown(menu.id)">
+        {{ menu.title }}
+      </button>
+      <div class="dropdown-content" *ngIf="menu.isOpen">
+        <p>{{ menu.content }}</p>
+      </div>
+    </div>
+  </div>
 </section>
