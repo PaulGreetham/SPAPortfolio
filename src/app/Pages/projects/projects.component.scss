@@ -9,20 +9,23 @@
 header {
   display: flex;
   align-items: center;
-  margin: 2rem;
+  height: 40vh;
+  padding: 2rem;
 }
 
 h1 {
   font-size: 5rem;
-  opacity: 0; /* Ensure the element is initially invisible */
-  transform: translateX(-30px); /* Initial horizontal position */
+  margin: 0;
+
+  opacity: 0;
+  transform: translateX(-30px);
   animation: fadeInFromLeft 0.5s ease-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes fadeInFromLeft {
   from {
-    transform: translateX(-25px); /* Adjust for desired starting position */
+    transform: translateX(-25px);
     opacity: 0;
   }
   to {
@@ -31,14 +34,13 @@ h1 {
   }
 }
 
-.cards-container {
+.projects-container {
   display: flex;
   justify-content: space-between; /* Adjust this as needed */
   flex-wrap: wrap;
 
-  height: 100%;
-  margin: 2rem;
-  align-items: stretch;
+  height: 50vh;
+  padding: 2rem;
 }
 
 app-card {

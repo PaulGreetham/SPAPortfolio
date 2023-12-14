@@ -16,6 +16,10 @@ export class NavbarComponent {
   constructor(private router: Router) {}
 
   navigateTo(path: string): void {
-    this.router.navigate([path]); // Use Router to navigate
+    if (this.router.url === `/${path}`) {
+      window.location.reload();
+    } else {
+      this.router.navigate([path]);
+    }
   }
 }

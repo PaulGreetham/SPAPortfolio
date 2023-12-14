@@ -9,14 +9,16 @@
 header {
   display: flex;
   align-items: center;
-  height: 16rem;
-  margin: 2rem;
+  height: 40vh;
+  padding: 2rem;
 }
 
 h1 {
   font-size: 60px;
-  opacity: 0; /* Ensure the element is initially invisible */
-  transform: translateX(-30px); /* Initial horizontal position */
+  margin: 0;
+
+  opacity: 0;
+  transform: translateX(-30px);
   animation: fadeInFromLeft 0.5s ease-out;
   animation-fill-mode: forwards;
 }
@@ -30,4 +32,13 @@ h1 {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between; /* Adjust this as needed */
+  flex-wrap: wrap;
+
+  height: 20vh;
+  padding: 2rem;
 }
