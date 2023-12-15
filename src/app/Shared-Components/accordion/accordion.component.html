@@ -17,7 +17,7 @@
       <div *ngIf="!isStringContent(item.content)" class="tools-section">
         <div class="tools-toggle-buttons">
           <button (click)="setActiveToolsSection('frequentlyUsed')">Frequently Used</button>
-          <button (click)="setActiveToolsSection('InfrequentlyUsed')">Infrequently Used</button>
+          <button (click)="setActiveToolsSection('infrequentlyUsed')">Infrequently Used</button>
         </div>
 
         <div *ngIf="activeToolsSection === 'frequentlyUsed'" class="tools-grid">
@@ -29,8 +29,8 @@
           </div>
         </div>
 
-        <div *ngIf="activeToolsSection === 'InfrequentlyUsed'" class="tools-grid">
-          <div class="tool-item" *ngFor="let tool of item.content.inFrequentlyUsed">
+        <div *ngIf="activeToolsSection === 'infrequentlyUsed'" class="tools-grid">
+          <div class="tool-item" *ngFor="let tool of item.content.infrequentlyUsed">
             <a href="{{ tool.url }}" target="_blank">
               <img [src]="tool.logo" alt="{{tool.name}}">
               <span>{{ tool.name }}</span>

@@ -10,7 +10,7 @@ interface ToolItem {
 
 export type AccordionItemContent = string | {
   frequentlyUsed: ToolItem[];
-  inFrequentlyUsed: ToolItem[];
+  infrequentlyUsed: ToolItem[];
 };
 
 export interface AccordionItem {
@@ -45,7 +45,7 @@ export class TechComponent {
           { name: 'Jest', logo: '/assets/logos/Jest.png', url: 'https://jestjs.io/' },
           { name: 'Cypress', logo: '/assets/logos/Cypress.png', url: 'https://www.cypress.io/' },
         ],
-        inFrequentlyUsed: [
+        infrequentlyUsed: [
           { name: 'React', logo: '/assets/logos/React.png', url: 'https://react.dev/' },
           { name: 'Ruby', logo: '/assets/logos/Ruby.png', url: 'https://www.ruby-lang.org/en/' },
           { name: 'Rails', logo: '/assets/logos/Rails.png', url: 'https://rubyonrails.org/' },

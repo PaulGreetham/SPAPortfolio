@@ -16,14 +16,14 @@ export class AccordionComponent {
 
   openSection: string | null = null;
 
-  activeToolsSection: 'frequentlyUsed' | 'InfrequentlyUsed' | null = null;
+  activeToolsSection: 'frequentlyUsed' | 'infrequentlyUsed' | null = null;
 
   toggleSection(section: string) {
     this.openSection = (this.openSection === section) ? null : section;
     this.activeToolsSection = null; // Reset tools section when toggling accordion sections
   }
 
-  setActiveToolsSection(section: 'frequentlyUsed' | 'InfrequentlyUsed') {
+  setActiveToolsSection(section: 'frequentlyUsed' | 'infrequentlyUsed') {
     this.activeToolsSection = section;
   }
 

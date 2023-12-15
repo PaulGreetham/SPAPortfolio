@@ -104,6 +104,17 @@ button {
     margin-bottom: 10px;
   }
 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); // Adjust for desired effect
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
@@ -116,6 +127,14 @@ button {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      opacity: 0;
+      animation: fadeInUp 0.5s ease-out forwards;
+
+      @for $i from 1 through 20 { // Adjust 20 to the number of logos you have
+        &:nth-child(#{$i}) {
+          animation-delay: 0.1s * $i; // Each logo is delayed slightly more
+        }
+      }
 
       img {
         max-width: 5rem; // Adjust size as needed
@@ -146,7 +165,7 @@ button {
   display: flex; // Use flexbox for horizontal layout
   justify-content: center; // Center the buttons horizontally
   height: 5rem;
-  margin-bottom: 4rem; // Add some space below the buttons
+  margin-bottom: 3rem; // Add some space below the buttons
 
   button {
     margin-right: 10px;
