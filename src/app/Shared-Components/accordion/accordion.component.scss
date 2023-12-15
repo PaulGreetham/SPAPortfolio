@@ -96,3 +96,49 @@ button {
     }
   }
 }
+
+.tools-section {
+  margin-top: 20px;
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    .tool-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 4rem; // Adjust size as needed
+        height: auto;
+        margin-bottom: 5px;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+        color: inherit; // Adjust color as needed
+        transition: 0.3s;
+
+        &:hover {
+          scale: 0.98;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
