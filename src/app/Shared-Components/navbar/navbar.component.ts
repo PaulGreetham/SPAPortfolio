@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
