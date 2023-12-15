@@ -162,23 +162,33 @@ button {
 }
 
 .tools-toggle-buttons {
-  display: flex; // Use flexbox for horizontal layout
-  justify-content: center; // Center the buttons horizontally
+  display: flex;
+  justify-content: center;
   height: 5rem;
-  margin-bottom: 3rem; // Add some space below the buttons
+  margin-bottom: 3rem;
+
+  &.active {
+    border: 2px solid blue;
+  }
 
   button {
     margin-right: 10px;
-    background-color: #f0f0f0; // Adjust as per your theme
+    background-color: #f0f0f0;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
 
     &:hover {
-      background-color: #e0e0e0; // Adjust hover color
+      background-color: #e0e0e0;
     }
 
     &:last-child {
-      margin-right: 0; // Remove margin for the last button
+      margin-right: 0;
+    }
+
+    &.active-button {
+      border: 2px dotted black;
+      background-color: #e0e0e0;
     }
   }
 }

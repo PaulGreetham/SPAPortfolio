@@ -16,8 +16,16 @@
       <div *ngIf="isStringContent(item.content)" [innerHTML]="item.content"></div>
       <div *ngIf="!isStringContent(item.content)" class="tools-section">
         <div class="tools-toggle-buttons">
-          <button (click)="setActiveToolsSection('frequentlyUsed')">Frequently Used</button>
-          <button (click)="setActiveToolsSection('infrequentlyUsed')">Infrequently Used</button>
+          <button
+            (click)="setActiveToolsSection('frequentlyUsed')"
+            [class.active-button]="activeToolsSection === 'frequentlyUsed'">
+            Frequently Used
+          </button>
+          <button
+            (click)="setActiveToolsSection('infrequentlyUsed')"
+            [class.active-button]="activeToolsSection === 'infrequentlyUsed'">
+            Infrequently Used
+          </button>
         </div>
 
         <div *ngIf="activeToolsSection === 'frequentlyUsed'" class="tools-grid">
