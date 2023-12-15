@@ -15,8 +15,12 @@
     <div *ngFor="let item of accordionItems" [hidden]="openSection !== item.title" class="content">
       <div *ngIf="isStringContent(item.content)" [innerHTML]="item.content"></div>
       <div *ngIf="!isStringContent(item.content)" class="tools-section">
-        <h3>Frequently Used</h3>
-        <div class="tools-grid">
+        <div class="tools-toggle-buttons">
+          <button (click)="setActiveToolsSection('frequentlyUsed')">Frequently Used</button>
+          <button (click)="setActiveToolsSection('InfrequentlyUsed')">Infrequently Used</button>
+        </div>
+
+        <div *ngIf="activeToolsSection === 'frequentlyUsed'" class="tools-grid">
           <div class="tool-item" *ngFor="let tool of item.content.frequentlyUsed">
             <a href="{{ tool.url }}" target="_blank">
               <img [src]="tool.logo" alt="{{tool.name}}">
@@ -25,8 +29,7 @@
           </div>
         </div>
 
-        <h3>Infrequently Used</h3>
-        <div class="tools-grid">
+        <div *ngIf="activeToolsSection === 'InfrequentlyUsed'" class="tools-grid">
           <div class="tool-item" *ngFor="let tool of item.content.inFrequentlyUsed">
             <a href="{{ tool.url }}" target="_blank">
               <img [src]="tool.logo" alt="{{tool.name}}">

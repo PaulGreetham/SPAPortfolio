@@ -9,18 +9,25 @@ import { AccordionItemContent } from '../../Pages/tech/tech.component';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './accordion.component.html',
-  styleUrl: './accordion.component.scss'
+  styleUrls: ['./accordion.component.scss']
 })
 export class AccordionComponent {
   @Input() accordionItems: AccordionItem[] = [];
 
   openSection: string | null = null;
 
-  isStringContent(content: AccordionItemContent): content is string {
-    return typeof content === 'string';
-  }
+  activeToolsSection: 'frequentlyUsed' | 'InfrequentlyUsed' | null = null;
 
   toggleSection(section: string) {
     this.openSection = (this.openSection === section) ? null : section;
+    this.activeToolsSection = null; // Reset tools section when toggling accordion sections
+  }
+
+  setActiveToolsSection(section: 'frequentlyUsed' | 'InfrequentlyUsed') {
+    this.activeToolsSection = section;
+  }
+
+  isStringContent(content: AccordionItemContent): content is string {
+    return typeof content === 'string';
   }
 }
