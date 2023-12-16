@@ -118,7 +118,7 @@ button {
   .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
 
@@ -146,7 +146,9 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+
+        height: 8rem;
 
         text-decoration: none;
         color: inherit; // Adjust color as needed
