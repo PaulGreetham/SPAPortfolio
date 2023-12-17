@@ -46,6 +46,14 @@
           </div>
         </div>
       </div>
+
+      <ng-container *ngIf="item.title === 'Professional'">
+        <button (click)="showModal = true">See Commit History</button>
+      </ng-container>
+
+      <app-modal [display]="showModal" title="Professional Details" (closeEvent)="showModal = false">
+        <p>Details about professional experience...</p>
+      </app-modal>
     </div>
   </div>
 </div>
