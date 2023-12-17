@@ -9,11 +9,28 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  animation: modalFadeIn 0.3s ease-in-out forwards;
 }
 
 .modal-dialog {
   background: white;
-  border-radius: 5px;
-  padding: 20px;
-  min-width: 300px;
+  height: 75%;
+  width: 60%;
+  padding: 4rem;
+
+  opacity: 0; // Initially, set opacity to 0
+  animation: modalFadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  $customTimingFunction: cubic-bezier(0.8, 0.8, 0.8, 1);
 }

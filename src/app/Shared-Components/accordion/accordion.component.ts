@@ -17,7 +17,7 @@ export class AccordionComponent {
 
   openSection: string | null = null;
   openModalItem: string | null = null;
-  showModal: boolean = false;
+  showModal = false;
   activeToolsSection: 'frequentlyUsed' | 'infrequentlyUsed' | null = null;
 
   toggleSection(section: string) {
@@ -34,7 +34,7 @@ export class AccordionComponent {
   }
 
   toggleModal(itemTitle: string) {
-    this.openModalItem = this.openModalItem === itemTitle ? null : itemTitle;
+    this.showModal = !this.showModal;
     // Assuming you want to allow only one modal to be open at a time
   }
 
