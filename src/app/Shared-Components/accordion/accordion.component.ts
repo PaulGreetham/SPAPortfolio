@@ -40,4 +40,8 @@ export class AccordionComponent {
   isModalOpen(itemTitle: string): boolean {
     return this.openModalItem === itemTitle;
   }
+
+  isAnySectionOpen(): boolean {
+    return this.openSection !== null;
+  }
 }

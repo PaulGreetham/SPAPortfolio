@@ -14,6 +14,33 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px; /* Add vertical spacing between buttons */
+
+  button:first-child {
+    position: relative; // Position relative to allow absolute positioning of the pseudo-element
+
+    // Create the chevron as a pseudo-element
+    &::after {
+      content: '<';
+      position: absolute;
+      right: -1rem; // Position the chevron to the right of the button
+      top: 50%;
+      transform: translateY(-50%); // Center vertically
+      font-size: 4rem; // Adjust size as needed
+      opacity: 0;
+      color: #000; // Chevron color
+      animation: blink-animation 0.9s infinite; // Blinking animation
+      animation-delay: 3s;
+    }
+
+    &.hide-chevron::after {
+      display: none; // Hide the chevron
+    }
+  }
+}
+
+@keyframes blink-animation {
+  0%, 100%   { opacity: 0; }
+  50%  { opacity: 1; }
 }
 
 /* Style for the individual accordion buttons */
