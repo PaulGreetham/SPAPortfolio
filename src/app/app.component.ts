@@ -9,6 +9,7 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { NavbarComponent } from "./Shared-Components/navbar/navbar.component";
 import { CardComponent } from './Shared-Components/card/card.component';
 import { ModalComponent } from './Shared-Components/modal/modal.component';
+import { StackToolsComponent } from './Shared-Components/accordion/stack-tools/stack-tools.component';
 
 
 @Component({
@@ -16,7 +17,20 @@ import { ModalComponent } from './Shared-Components/modal/modal.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, RouterOutlet, HomeComponent, AboutComponent, TechComponent, ModalComponent, ProjectsComponent, ContactComponent, NavbarComponent, CardComponent]
+    imports: [
+      CommonModule,
+      RouterOutlet,
+      HomeComponent,
+      AboutComponent,
+      TechComponent,
+      ModalComponent,
+      ProjectsComponent,
+      ContactComponent,
+      NavbarComponent,
+      CardComponent,
+      StackToolsComponent,
+
+    ]
 })
 export class AppComponent {
   title = 'SPAPortfolio';

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccordionComponent } from "../../Shared-Components/accordion/accordion.component";
 
-interface ToolItem {
+export interface ToolItem {
   name: string;
   logo: string;
   url: string;
