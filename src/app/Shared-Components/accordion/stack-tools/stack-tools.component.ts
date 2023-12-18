@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 export interface ToolItem {
   name: string;
@@ -15,6 +15,9 @@ export interface ToolItem {
   styleUrls: ['./stack-tools.component.scss']
 })
 export class StackToolsComponent {
+  @Input() frequentlyUsedTools: ToolItem[] = [];
+  @Input() infrequentlyUsedTools: ToolItem[] = [];
+
   frequentlyUsed: ToolItem[] = [
     { name: 'Angular', logo: '/assets/logos/Angular.png', url: 'https://angular.dev/' },
     { name: 'TypeScript', logo: '/assets/logos/Typescript.png', url: 'https://www.typescriptlang.org/' },
@@ -29,7 +32,6 @@ export class StackToolsComponent {
     { name: 'Cypress', logo: '/assets/logos/Cypress.png', url: 'https://www.cypress.io/' },
     { name: 'VS Code', logo: '/assets/logos/VSCode.png', url: 'https://code.visualstudio.com/' },
   ];
-
   infrequentlyUsed: ToolItem[] = [
     { name: 'React', logo: '/assets/logos/React.png', url: 'https://react.dev/' },
     { name: 'Ruby', logo: '/assets/logos/Ruby.png', url: 'https://www.ruby-lang.org/en/' },
