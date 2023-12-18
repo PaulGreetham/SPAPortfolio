@@ -4,13 +4,19 @@ import { AccordionItem } from '../../Pages/tech/tech.component';
 import { AccordionItemContent } from '../../Pages/tech/tech.component';
 import { ModalComponent } from '../modal/modal.component';
 import { StackToolsComponent, ToolItem } from '../accordion/stack-tools/stack-tools.component';
+import { ProfessionalComponent } from './professional/professional.component';
 
 @Component({
-  selector: 'app-accordion',
-  standalone: true,
-  imports: [CommonModule, ModalComponent, StackToolsComponent],
-  templateUrl: './accordion.component.html',
-  styleUrls: ['./accordion.component.scss']
+    selector: 'app-accordion',
+    standalone: true,
+    templateUrl: './accordion.component.html',
+    styleUrls: ['./accordion.component.scss'],
+    imports: [
+      CommonModule,
+      ModalComponent,
+      StackToolsComponent,
+      ProfessionalComponent,
+    ]
 })
 export class AccordionComponent {
   @Input() accordionItems: AccordionItem[] = [];
@@ -43,5 +49,9 @@ export class AccordionComponent {
 
   isAnySectionOpen(): boolean {
     return this.openSection !== null;
+  }
+
+  handleProfessionalModalToggle(isOpen: boolean) {
+    this.showModal = isOpen;
   }
 }

@@ -1,1 +1,7 @@
-<p>professional works!</p>
+<div *ngIf="item.title === 'Professional'" class="content">
+  <button (click)="toggleModal()">See Commit History</button>
+
+  <app-modal [display]="showModal" (closeEvent)="toggleModal()">
+    <p>Details about educational experience...</p>
+  </app-modal>
+</div>

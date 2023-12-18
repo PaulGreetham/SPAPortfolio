@@ -21,13 +21,11 @@
         [infrequentlyUsedTools]="item.content.infrequentlyUsed">
       </app-stack-tools>
 
-      <ng-container *ngIf="item.title === 'Professional'">
-        <button (click)="showModal = true">See Commit History</button>
-      </ng-container>
-
-      <app-modal [display]="showModal" title="Professional Details" (closeEvent)="showModal = false">
-        <p>Details about professional experience...</p>
-      </app-modal>
+      <app-professional
+        *ngIf="item.title === 'Professional'"
+        [item]="item"
+        (modalToggle)="handleProfessionalModalToggle($event)">
+      </app-professional>
     </div>
   </div>
 </div>

@@ -10,6 +10,7 @@ import { NavbarComponent } from "./Shared-Components/navbar/navbar.component";
 import { CardComponent } from './Shared-Components/card/card.component';
 import { ModalComponent } from './Shared-Components/modal/modal.component';
 import { StackToolsComponent } from './Shared-Components/accordion/stack-tools/stack-tools.component';
+import { ProfessionalComponent } from './Shared-Components/accordion/professional/professional.component';
 
 
 @Component({
@@ -29,7 +30,7 @@ import { StackToolsComponent } from './Shared-Components/accordion/stack-tools/s
       NavbarComponent,
       CardComponent,
       StackToolsComponent,
-
+      ProfessionalComponent,
     ]
 })
 export class AppComponent {
