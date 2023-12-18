@@ -7,9 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1000;
-  animation: modalFadeIn 0.3s ease-in-out forwards;
 }
 
 .modal-dialog {
@@ -18,19 +17,17 @@
   width: 60%;
   padding: 4rem;
 
-  opacity: 0; // Initially, set opacity to 0
-  animation: modalFadeIn 1.5s ease-in-out forwards;
-}
+  animation: fadeInFromBottom 0.5s ease-out forwards;
+  opacity: 0;
 
-@keyframes modalFadeIn {
-  0% {
-    opacity: 0;
+  @keyframes fadeInFromBottom {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-  $customTimingFunction: cubic-bezier(0.8, 0.8, 0.8, 1);
 }
