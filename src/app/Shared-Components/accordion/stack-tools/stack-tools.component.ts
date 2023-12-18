@@ -34,6 +34,7 @@ export class StackToolsComponent {
   ];
   infrequentlyUsed: ToolItem[] = [
     { name: 'React', logo: '/assets/logos/React.png', url: 'https://react.dev/' },
+    { name: 'Redux', logo: '/assets/logos/Redux.png', url: 'https://react-redux.js.org/' },
     { name: 'Ruby', logo: '/assets/logos/Ruby.png', url: 'https://www.ruby-lang.org/en/' },
     { name: 'Rails', logo: '/assets/logos/Rails.png', url: 'https://rubyonrails.org/' },
     { name: 'Next', logo: '/assets/logos/Next.png', url: 'https://nextjs.org/' },
