@@ -66,8 +66,10 @@
 
 .tools-toggle-buttons {
   display: flex;
+
   justify-content: center;
   height: 5rem;
+  width: 100%;
   margin-bottom: 3rem;
 
   &.active {
@@ -75,7 +77,10 @@
   }
 
   button {
+    font-family: monospace;
+    font-size: 1.25rem;
     margin-right: 10px;
+    width: 50%;
     background-color: #f0f0f0;
     border: none;
     cursor: pointer;
