@@ -11,6 +11,7 @@ import { CardComponent } from './Shared-Components/card/card.component';
 import { ModalComponent } from './Shared-Components/modal/modal.component';
 import { StackToolsComponent } from './Shared-Components/accordion/stack-tools/stack-tools.component';
 import { ProfessionalComponent } from './Shared-Components/accordion/professional/professional.component';
+import { BootcampsComponent } from './Shared-Components/accordion/bootcamps/bootcamps.component';
 
 
 @Component({
@@ -31,6 +32,7 @@ import { ProfessionalComponent } from './Shared-Components/accordion/professiona
       CardComponent,
       StackToolsComponent,
       ProfessionalComponent,
+      BootcampsComponent,
     ]
 })
 export class AppComponent {

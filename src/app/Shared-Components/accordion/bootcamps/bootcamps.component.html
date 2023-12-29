@@ -1,1 +1,14 @@
-<p>bootcamps works!</p>
+<div class="bootcamps-section">
+  <div *ngFor="let bootcamp of bootcamps" class="bootcamp">
+    <a [href]="bootcamp.url" target="_blank">
+      <img [src]="bootcamp.logo" alt="{{ bootcamp.name }} Logo" class="bootcamp-logo">
+    </a>
+    <h3>{{ bootcamp.name }}</h3>
+    <p>Date: {{ bootcamp.startDate }} - {{ bootcamp.endDate }}</p>
+    <p>Location: {{ bootcamp.location }}</p>
+    <p>{{ bootcamp.introText }}</p>
+    <ul>
+      <li *ngFor="let item of bootcamp.contentList">{{ item }}</li>
+    </ul>
+  </div>
+</div>

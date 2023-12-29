@@ -26,6 +26,10 @@
         [item]="item"
         (modalToggle)="handleProfessionalModalToggle($event)">
       </app-professional>
+
+      <app-bootcamps
+        *ngIf="item.content === 'bootcamps'">
+      </app-bootcamps>
     </div>
   </div>
 </div>

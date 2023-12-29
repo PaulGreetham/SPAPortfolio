@@ -5,6 +5,7 @@ import { AccordionItemContent } from '../../Pages/tech/tech.component';
 import { ModalComponent } from '../modal/modal.component';
 import { StackToolsComponent, ToolItem } from '../accordion/stack-tools/stack-tools.component';
 import { ProfessionalComponent } from './professional/professional.component';
+import { BootcampsComponent } from './bootcamps/bootcamps.component';
 
 @Component({
     selector: 'app-accordion',
@@ -16,6 +17,7 @@ import { ProfessionalComponent } from './professional/professional.component';
       ModalComponent,
       StackToolsComponent,
       ProfessionalComponent,
+      BootcampsComponent,
     ]
 })
 export class AccordionComponent {

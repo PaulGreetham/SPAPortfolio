@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: 'tech', component: TechComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: '' } // Wildcard route for a 404 page
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

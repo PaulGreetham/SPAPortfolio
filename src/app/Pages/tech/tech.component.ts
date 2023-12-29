@@ -19,6 +19,17 @@ export interface ToolItem {
   url: string;
 }
 
+export interface BootcampInfo {
+  logo: string;
+  name: string;
+  url: string;
+  startDate: string;
+  endDate: string;
+  location: string;
+  introText: string;
+  contentList: string[];
+}
+
 @Component({
   selector: 'app-tech',
   standalone: true,
@@ -45,8 +56,8 @@ export class TechComponent {
     },
     {
       title: 'Bootcamps',
-      content: 'Information about bootcamps...'
-    },
+      content: 'bootcamps'
+  },
     {
       title: 'Professional',
       content: 'Professional experience details...'
