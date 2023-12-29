@@ -1,13 +1,10 @@
 .bootcamps-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 2rem;
 
   .bootcamp {
-    border: 1px solid #ddd; // Example border, adjust as needed
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #f9f9f9; // Example background, adjust as needed
+    padding: 2rem;
 
     .bootcamp-logo {
       max-width: 100px; // Adjust as needed
