@@ -1,37 +1,25 @@
-<!-- Tools Toggle Buttons -->
-<div class="tools-toggle-buttons">
-  <button
-    (click)="setActiveToolsSection('frequentlyUsed')"
-    [class.active-button]="activeToolsSection === 'frequentlyUsed'">
-    Frequently Used
-  </button>
-  <button
-    (click)="setActiveToolsSection('infrequentlyUsed')"
-    [class.active-button]="activeToolsSection === 'infrequentlyUsed'">
-    Infrequently Used
-  </button>
-</div>
-
-<!-- Tools Grid for Frequently Used Tools -->
-<div *ngIf="activeToolsSection === 'frequentlyUsed'" class="tools-section">
-  <div class="tools-grid">
-    <div class="tool-item" *ngFor="let tool of frequentlyUsed">
-      <a href="{{ tool.url }}" target="_blank">
-        <img [src]="tool.logo" alt="{{ tool.name }}">
-        <span>{{ tool.name }}</span>
-      </a>
+<div class="tools-section">
+  <div class="tools-grid-column">
+    <h3>Frequently Used</h3>
+    <div class="tools-grid">
+      <div class="tool-item" *ngFor="let tool of frequentlyUsed">
+        <a href="{{ tool.url }}" target="_blank">
+          <img [src]="tool.logo" alt="{{ tool.name }}">
+          <span>{{ tool.name }}</span>
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Tools Grid for Infrequently Used Tools -->
-<div *ngIf="activeToolsSection === 'infrequentlyUsed'" class="tools-section">
-  <div class="tools-grid">
-    <div class="tool-item" *ngFor="let tool of infrequentlyUsed">
-      <a href="{{ tool.url }}" target="_blank">
-        <img [src]="tool.logo" alt="{{ tool.name }}">
-        <span>{{ tool.name }}</span>
-      </a>
+  <div class="tools-grid-column">
+    <h3>Infrequently Used</h3>
+    <div class="tools-grid">
+      <div class="tool-item" *ngFor="let tool of infrequentlyUsed">
+        <a href="{{ tool.url }}" target="_blank">
+          <img [src]="tool.logo" alt="{{ tool.name }}">
+          <span>{{ tool.name }}</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>

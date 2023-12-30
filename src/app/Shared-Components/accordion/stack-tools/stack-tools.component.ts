@@ -46,10 +46,4 @@ export class StackToolsComponent {
     { name: 'Mocha', logo: '/assets/logos/Mocha.png', url: 'https://mochajs.org/' },
     { name: 'Chai', logo: '/assets/logos/Chai.png', url: 'https://www.chaijs.com/' },
   ];
-
-  activeToolsSection: 'frequentlyUsed' | 'infrequentlyUsed' | null = null;
-
-  setActiveToolsSection(section: 'frequentlyUsed' | 'infrequentlyUsed'): void {
-    this.activeToolsSection = section;
-  }
 }

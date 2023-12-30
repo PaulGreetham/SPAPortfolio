@@ -1,63 +1,81 @@
 .tools-section {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  gap: 4rem;
 
-  h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
+  .tools-grid-column {
+    min-width: 45%;
 
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px); // Adjust for desired effect
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
-
-    .tool-item {
+    h3 {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      opacity: 0;
-      animation: fadeInUp 0.5s ease-out forwards;
+      align-items: center;
 
-      @for $i from 1 through 20 { // Adjust 20 to the number of logos you have
-        &:nth-child(#{$i}) {
-          animation-delay: 0.1s * $i; // Each logo is delayed slightly more
-        }
+      color: white;
+      background-color: rgb(242, 190, 34);
+      font-size: 1.5rem;
+      font-weight: lighter;
+
+      margin: 0;
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px); // Adjust for desired effect
       }
-
-      img {
-        max-width: 5rem; // Adjust size as needed
-        height: auto;
-        margin-bottom: 1rem;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
+    }
 
-      a {
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+      gap: 1.5rem;
+      align-items: stretch;
+      justify-content: center;
+
+      .tool-item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        opacity: 0;
+        animation: fadeInUp 0.5s ease-out forwards;
 
-        height: 8rem;
+        @for $i from 1 through 20 { // Adjust 20 to the number of logos you have
+          &:nth-child(#{$i}) {
+            animation-delay: 0.15s * $i; // Each logo is delayed slightly more
+          }
+        }
 
-        text-decoration: none;
-        color: inherit; // Adjust color as needed
-        transition: 0.3s;
+        img {
+          max-width: 2.5rem; // Adjust size as needed
+          height: auto;
+          margin-bottom: 1rem;
+        }
 
-        &:hover {
-          scale: 0.98;
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+
+          height: 100%;
+
+          text-decoration: none;
+          color: inherit; // Adjust color as needed
           transition: 0.3s;
+
+          &:hover {
+            scale: 0.98;
+            transition: 0.3s;
+          }
         }
       }
     }
