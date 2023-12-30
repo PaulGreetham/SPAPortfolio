@@ -7,6 +7,7 @@
 }
 
 nav {
+  background-color: rgb(244, 80, 80);
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
@@ -14,6 +15,7 @@ nav {
 }
 
 button {
+  color: white;
   font-family: $primary-font;
   font-size: 24px;
   background-color: transparent;
