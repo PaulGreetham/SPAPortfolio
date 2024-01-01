@@ -19,7 +19,7 @@ export class HomeComponent {
   }
 
   initLettersWithDelay() {
-    let delay = 2.25; // Start delay for the name
+    let delay = 3; // Start delay for the name
     const increment = 0.1;
 
     for (const char of this.name) {
@@ -32,11 +32,16 @@ export class HomeComponent {
     }
 
     // Additional delay before starting the subtitle
-    delay += 2;
+    delay += 1.5;
 
     for (const char of this.subtitle) {
+      if (char !== ' ') {
         this.subtitleLettersWithDelay.push({ letter: char, delay: `${delay}s` });
-        delay += increment;
+      } else {
+        // Handle space as a transparent letter
+        this.subtitleLettersWithDelay.push({ letter: '\u00A0', delay: `${delay}s` }); // \u00A0 is a non-breaking space
       }
+      delay += increment;
     }
   }
+}

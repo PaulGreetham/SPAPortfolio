@@ -83,10 +83,10 @@ h1 {
 
     h3 {
       font-family: 'Waiting for the Sunrise', cursive;
-      font-size: 2.5rem;
-      font-weight: lighter;
+      font-size: 3rem;
       margin: 0;
       padding: 1rem;
+      padding-left: 2rem;
       position: relative;
 
       &::before {
@@ -101,6 +101,14 @@ h1 {
         background-size: 200% 200%;
         animation: slideRightBG 2s linear forwards;
         animation-delay: 2s;
+      }
+
+      .subtitle-letter {
+        color: white; // Or any color you want
+        display: inline-block;
+        transform: translateX(80px);
+        opacity: 0;
+        animation: slideIn 0.5s ease forwards;
       }
     }
   }
