@@ -12,17 +12,19 @@
 
   .left-column {
     width: 20%;
-    background-color: white; // White background
+    background-color: white;
   }
 
   .right-column {
     width: 80%;
-    padding: 2rem; // Adjust padding as needed
+    padding: 2rem;
+    padding-right: 0;
 
     h1 {
       position: relative;
       font-size: 8rem;
       margin-bottom: 1rem;
+      padding: 2rem;
       line-height: 0.95;
       overflow: hidden;
 
@@ -46,7 +48,6 @@
       transform: translateY(20px);
       opacity: 0;
       animation: slideIn 0.5s ease forwards;
-      animation-delay: 3s;
     }
 
     .subtitle {
@@ -56,7 +57,7 @@
       margin: 0;
       opacity: 0;
       animation: fadeIn 1s ease forwards;
-      animation-delay: 2.4s; // Adjusted based on the total time of letter animations
+      animation-delay: 5s;
     }
 
     p {
@@ -64,7 +65,7 @@
     }
 
     .small-text {
-      font-size: 0.8rem; // Adjust size as needed
+      font-size: 0.8rem;
     }
   }
 }
@@ -78,19 +79,12 @@
 
 @keyframes slideBG {
   to {
-    left: 0; // Slide in to fill the h1
-  }
-}
-
-@keyframes slideBG {
-  to {
     background-position: 100% bottom;
   }
 }
 
-// Delay for each letter
-@for $i from 1 through 20 {
-  .letter:nth-of-type(#{$i}) {
-    animation-delay: 3s + 0.15s * ($i - 1); // Delay increases for each letter
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
