@@ -10,10 +10,16 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
   name = 'Paul Greetham';
+  subtitle = 'Frontend Software Developer';
   lettersWithDelay: Array<{ letter: string, delay: string } | 'BR'> = [];
+  subtitleLettersWithDelay: Array<{ letter: string, delay: string }> = [];
 
   constructor() {
-    let delay = 2;
+    this.initLettersWithDelay();
+  }
+
+  initLettersWithDelay() {
+    let delay = 2.25; // Start delay for the name
     const increment = 0.1;
 
     for (const char of this.name) {
@@ -24,5 +30,13 @@ export class HomeComponent {
         delay += increment;
       }
     }
+
+    // Additional delay before starting the subtitle
+    delay += 2;
+
+    for (const char of this.subtitle) {
+        this.subtitleLettersWithDelay.push({ letter: char, delay: `${delay}s` });
+        delay += increment;
+      }
+    }
   }
-}

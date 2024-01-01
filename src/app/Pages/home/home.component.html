@@ -1,15 +1,24 @@
+<header>
+  <h1>Hello, I'm...</h1>
+</header>
+
 <section class="home-container">
   <div class="left-column"></div>
   <div class="right-column">
-    <h1>
+    <h2>
       <ng-container *ngFor="let item of lettersWithDelay">
         <span *ngIf="item !== 'BR'" class="letter" [style.animation-delay]="item.delay">
           {{ item.letter }}
         </span>
         <br *ngIf="item === 'BR'">
       </ng-container>
-    </h1>
-    <p class="subtitle">Frontend Software Developer</p>
-    <p class="small-text">some smaller text here</p>
+    </h2>
+    <h3>
+      <ng-container *ngFor="let item of subtitleLettersWithDelay">
+        <span class="subtitle-letter" [style.animation-delay]="item.delay">
+          {{ item.letter }}
+        </span>
+      </ng-container>
+    </h3>
   </div>
 </section>
