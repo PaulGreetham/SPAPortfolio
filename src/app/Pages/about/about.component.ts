@@ -1,24 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'] // Correct from 'styleUrl' to 'styleUrls'
+  styleUrls: ['./about.component.scss']
 })
-export class AboutComponent {
-  menus = [
-    { id: 1, title: 'Story', content: 'Content for dropdown 1', isOpen: false },
-    { id: 2, title: 'Before', content: 'Content for dropdown 2', isOpen: false },
-    { id: 3, title: 'Interests', content: 'Content for dropdown 3', isOpen: false }
-  ];
+export class AboutComponent implements OnInit {
+  constructor(private route: ActivatedRoute) {}
 
-  toggleDropdown(menuId: number): void {
-    const menu = this.menus.find(m => m.id === menuId);
-    if (menu) {
-      menu.isOpen = !menu.isOpen;
-    }
+  ngOnInit() {
+    this.route.fragment.subscribe((fragment: string | null) => {
+      if (fragment) {
+        setTimeout(() => {
+          const element = document.getElementById(fragment);
+          if (element) element.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    });
   }
 }

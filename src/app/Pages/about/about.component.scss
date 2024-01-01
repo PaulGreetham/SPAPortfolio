@@ -38,69 +38,72 @@ h1 {
   }
 }
 
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); // 4 equal columns
-  gap: 1rem; // Space between grid items
-  align-items: start; // Align items to the top of the grid row
+.about-me-container {
+  display: flex;
+  align-items: flex-start;
   height: 66vh;
   padding: 2rem;
-}
 
-.dropdowns-container {
-  grid-column: span 3;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  .text-column {
+    width: 70%;
+    padding-inline: 1rem;
+    overflow-y: auto;
+    max-height: 400px; // Adjust as needed
+    position: relative;
 
-  .dropdown {
-    width: 100%;
-    // Existing dropdown styles...
-
-    button {
+    .text-navbar {
       display: flex;
-      font-family: $primary-font;
-      font-size: 24px;
-      width: 90%;
-      padding: 0;
-      background-color: transparent;
-      border: none;
-      transition: 0.3s;
+      align-items: center;
+      justify-content: space-around;
+      position: sticky;
+      height: 3rem;
+      top: 0;
+      background: white;
+      z-index: 10;
 
-      &:hover, &:active, &:focus {
-        scale: 0.98;
-        cursor: pointer;
-        transition: 0.3s;
-      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        margin-right: 1rem;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(60, 72, 107);
 
-      &.open {
-        background-color: rgba(240, 240, 240);
-        padding: 18px;
-        scale: 1.03;
-        transition: 0.3s ease-in-out;
-      }
-
-      &.closed {
-        background-color: transparent;
-        transition: 0.3s ease-in-out;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
+
+    h4 {
+      margin: 0;
+      padding-top: 4rem;
+    }
+
+    // Style for each section
+    div[id] {
+      margin-bottom: 2rem;
+    }
+
+    // Additional styles...
   }
 
-  .dropdown-content {
-    padding: 10px;
-    border: 1px solid #ccc;
-    opacity: 0; /* Initially set opacity to 0 to hide content */
-    animation: fadeIn 0.6s ease-in-out forwards; /* Apply fadeIn animation */
+  .photo-column {
+    height: 100%;
+    width: 30%;
+    padding: 1rem; // Consistent padding with the text column
+    display: flex;
+    justify-content: center; // Center the image in the column
+    align-items: center;
 
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+    img {
+      width: 100%; // Fill the width of the column
+      height: 100%; // Fill the height of the column
+      object-fit: cover; // Cover the area, maintaining aspect ratio
+      object-position: center; // Center the image within the frame
     }
   }
 }
