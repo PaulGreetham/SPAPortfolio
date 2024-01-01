@@ -13,7 +13,7 @@ export class HomeComponent {
   lettersWithDelay: Array<{ letter: string, delay: string } | 'BR'> = [];
 
   constructor() {
-    let delay = 3;
+    let delay = 2;
     const increment = 0.1;
 
     for (const char of this.name) {
