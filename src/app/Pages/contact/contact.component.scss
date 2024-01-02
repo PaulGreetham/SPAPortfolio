@@ -20,6 +20,8 @@ h1 {
   font-size: 6rem;
   font-weight: lighter;
   margin: 0;
+  letter-spacing: 0.25rem;
+
   opacity: 0;
   transform: translateX(-30px);
   animation: fadeInFromLeft 0.5s ease-out;
@@ -108,6 +110,7 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: transparent;
+
     h3 {
       font-size: 1.8rem;
       margin-bottom: 0.5rem;

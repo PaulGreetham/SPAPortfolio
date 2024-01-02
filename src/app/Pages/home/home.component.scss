@@ -20,6 +20,7 @@ h1 {
   font-size: 6rem;
   font-weight: lighter;
   margin: 0;
+  letter-spacing: 0.25rem;
 
   opacity: 0;
   transform: translateX(-30px);
@@ -88,6 +89,7 @@ h1 {
       padding: 1rem;
       padding-left: 2rem;
       position: relative;
+      letter-spacing: 0.25rem;
 
       &::before {
         content: '';
