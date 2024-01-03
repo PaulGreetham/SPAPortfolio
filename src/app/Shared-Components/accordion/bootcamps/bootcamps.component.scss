@@ -2,53 +2,81 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  height: 100%;
 
   .bootcamp {
-    padding: 2rem;
 
-    .bootcamp-logo {
-      max-width: 100px; // Adjust as needed
-      height: auto;
-      display: block;
-      margin: 0 auto 10px; // Center logo with margin at the bottom
-      transition: scale 0.3s;
+    .row-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      height: 40%;
 
-      &:hover {
-        scale: 0.95;
-        transition: scale 0.3s;
+      .logo-column {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 40%;
+
+        .bootcamp-logo {
+          max-width: 8rem;
+          height: auto;
+          display: block;
+          margin: 0 auto 10px; // Center logo with margin at the bottom
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(0.95);
+            transition: transform 0.3s;
+          }
+        }
       }
-  }
 
-    h3 {
-      font-size: 1.2em;
-      margin-bottom: 0.5em;
-      color: #333; // Example color, adjust as needed
+      .info-column {
+        padding-left: 1rem; // Space between logo and info
 
-      a {
-        text-decoration: none;
-        color: inherit; // Ensures link color matches the heading
+        h3 {
+          font-size: 1.2rem;
+          margin: 0;
+          margin-bottom: 0.5em;
+          color: #333; // Example color, adjust as needed
 
-        &:hover {
-          text-decoration: underline;
+          a {
+            text-decoration: none;
+            color: inherit; // Ensures link color matches the heading
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        p {
+          margin: 0;
+          margin-bottom: 0.5em;
+          font-size: 0.8em;
+          color: #666; // Example color, adjust as needed
         }
       }
     }
 
-    p {
-      margin-bottom: 0.5em;
-      font-size: 0.9em;
-      color: #666; // Example color, adjust as needed
-    }
+    // Row 2: Content List
+    .content-row {
+      height: 60%;
+      font-size: 0.8rem;
 
-    ul {
-      column-count: 2; // Creates a two-column layout for the list
-      column-gap: 20px; // Adjust the gap between columns as needed
+      ul {
+        column-count: 3; // Creates a two-column layout for the list
+        column-gap: 20px; // Adjust the gap between columns as needed
+        padding-left: 2rem;
 
-      li {
-        break-inside: avoid; // Prevents list items from being split between columns
-        -webkit-column-break-inside: avoid; // For WebKit browsers
-        page-break-inside: avoid; // For printing
-        margin-bottom: 10px; // Space between list items
+        li {
+          break-inside: avoid; // Prevents list items from being split between columns
+          -webkit-column-break-inside: avoid; // For WebKit browsers
+          page-break-inside: avoid; // For printing
+          margin-bottom: 10px; // Space between list items
+        }
       }
     }
   }
