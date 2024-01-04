@@ -25,7 +25,18 @@
   <div *ngIf="item.title === 'Professional'" class="content">
     <button (click)="toggleModal()">See Commit History</button>
     <app-modal [display]="showModal" (closeEvent)="toggleModal()">
-      <p>Details about commit history...</p>
+      <h1>GitLab Commit History</h1>
+      <p>The following GitLab commit history has been amended so as not to include and commercially sensitive information. The purpose of this list is to see the types of issues/tickets I have expereicne with. Scroll down to see the full list:</p>
+
+      <div class="commit-list">
+        <ul>
+          <li *ngFor="let commit of gitCommits">
+            <h4><strong>Title:</strong> {{ commit.title }}</h4>
+            <p><strong>Type:</strong> {{ commit.type }}</p>
+            <p><strong>Description:</strong> {{ commit.description }}</p>
+          </li>
+        </ul>
+      </div>
     </app-modal>
   </div>
 

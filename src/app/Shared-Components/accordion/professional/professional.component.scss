@@ -46,3 +46,29 @@
     }
   }
 }
+
+.commit-list {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 2rem;
+
+      &:nth-child(odd) {  // Styles for odd-numbered items
+        background-color: white; // White background
+      }
+
+      &:nth-child(even) { // Styles for even-numbered items
+        background-color: lightblue; // Light blue background
+      }
+
+      h4 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

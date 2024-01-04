@@ -15,7 +15,8 @@
   background: white;
   height: 75%;
   width: 60%;
-  padding: 4rem;
+  padding: 2rem;
+  overflow-y: auto;
 
   animation: fadeInFromBottom 0.5s ease-out forwards;
   opacity: 0;
