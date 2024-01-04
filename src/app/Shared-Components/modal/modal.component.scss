@@ -1,3 +1,5 @@
+@import '../../Shared-Styles/_fonts';
+
 .modal {
   position: fixed;
   top: 0;
@@ -22,6 +24,7 @@
     }
 
     button {
+      font-family: $primary-font;
       border: none;
       background: none;
       font-size: 1rem;

@@ -7,6 +7,7 @@ export interface JobReference {
   companyName: string;
   companyWebsite: string;
   jobTitle: string;
+  contract: string;
   startDate: string;
   endDate: string;
   location: string;
@@ -36,6 +37,7 @@ export class ProfessionalComponent {
     companyName: 'RiskChallenger',
     companyWebsite: 'https://www.riskchallenger.nl/',
     jobTitle: 'Junior Full-Stack Software Developer',
+    contract: 'Permanent | Full-Time',
     startDate: 'April 2023',
     endDate: 'Present',
     location: 'Amersfoort, The Netherlands',
