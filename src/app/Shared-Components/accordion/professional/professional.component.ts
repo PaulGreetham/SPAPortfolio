@@ -79,7 +79,7 @@ export class ProfessionalComponent {
     {
       title: 'Create custom export file functionality',
       type: 'Full-Stack',
-      description: 'Created new export types as well as customer customised export functionality. Redesinged 3rd part export functionality.'
+      description: 'Created new export types as well as customer customised export functionality. Redesinged 3rd party export functionality.'
     },
     {
       title: 'Change translation key within variable modal',
@@ -117,49 +117,104 @@ export class ProfessionalComponent {
       description: 'This commit add a block margin to the button to increase the spacing.'
     },
     {
-      title: 'Commit Title 2',
-      type: 'Front-End',
-      description: 'Description of what was done in Commit 2...'
+      title: 'Create whitespace validator library and unify pin error message',
+      type: 'Full-Stack',
+      description: 'When a user enters a pin, the error message was not clear. This commit creates a new library to validate whitespace and unifies the error message.'
     },
     {
-      title: 'Commit Title 1',
+      title: 'Increase toast display time',
       type: 'Front-End',
-      description: 'Description of what was done in Commit 1...'
+      description: 'Feedback is that the toast messages were not visible long enough. This commit increases the display time of all toast message popups.'
     },
     {
-      title: 'Commit Title 2',
+      title: 'Add space between language picker and dropdown menu',
       type: 'Front-End',
-      description: 'Description of what was done in Commit 2...'
+      description: 'The dropdown menu for the language picker overlaps the dropdown options and chevron. This commit adds space between the language picker and the dropdown menu.'
     },
     {
-      title: 'Commit Title 1',
+      title: 'Create new logged-out page after user session ends',
       type: 'Front-End',
-      description: 'Description of what was done in Commit 1...'
+      description: 'When a user session ends, the user is redirected to the login page. This commit creates a new page to inform the user that their session has ended.'
     },
     {
-      title: 'Commit Title 2',
+      title: 'Resize loading spinner due to safari browser limitations',
       type: 'Front-End',
-      description: 'Description of what was done in Commit 2...'
+      description: 'When the loading spinner was displayed, it was not visible in Safari browsers. This commit resizes the spinner to be visible in Safari browsers.'
     },
     {
-      title: 'Commit Title 1',
+      title: 'Add double click function to open modal',
       type: 'Front-End',
-      description: 'Description of what was done in Commit 1...'
+      description: 'Add double click function to open modal, instead of having to click on the open button.'
     },
     {
-      title: 'Commit Title 2',
+      title: 'Align open and collapse chevron in admin sidebar',
       type: 'Front-End',
-      description: 'Description of what was done in Commit 2...'
+      description: 'Within the admin sidebar, the open and collapse chevron were not aligned. This commit aligns the chevron to be in the same position.'
     },
     {
-      title: 'Commit Title 1',
-      type: 'Front-End',
-      description: 'Description of what was done in Commit 1...'
+      title: 'Translate string none to different languages',
+      type: 'Back-End',
+      description: 'The string none was not translated in different languages. This commit adds the translation for the string none in different languages.'
     },
     {
-      title: 'Commit Title 2',
+      title: 'Resize loading spinner due to safari browser limitations',
       type: 'Front-End',
-      description: 'Description of what was done in Commit 2...'
+      description: 'When the loading spinner was displayed, it was not visible in Safari browsers. This commit resizes the spinner to be visible in Safari browsers.'
+    },
+    {
+      title: 'Remove ability to add decimal places to project deadline reminder',
+      type: 'Front-End',
+      description: 'The project deadline reminder was accepting decimal places. This commit removes the ability to add decimal places to the project deadline reminder.'
+    },
+    {
+      title: 'Prevent overlap of dashboard statistics numbers',
+      type: 'Front-End',
+      description: 'When the dashboard statistics numbers were displayed, they overlapped. This commit prevents the overlap of the dashboard statistics numbers.'
+    },
+    {
+      title: 'Add space to left of searchbox to make entire border visible',
+      type: 'Front-End',
+      description: 'The searchbox was not visible on the left side. This commit adds space to the left of the searchbox to make the entire border visible.'
+    },
+    {
+      title: 'Add loading spinner to index and project',
+      type: 'Front-End',
+      description: 'When the index or project page was loading, there was no loading spinner. This commit adds a loading spinner to the index and project page.'
+    },
+    {
+      title: 'Change component selectors and filenames to be more consistent',
+      type: 'Back-End',
+      description: 'The component selectors and filenames were not consistent. This commit changes the selectors and filenames to be more consistent.'
+    },
+    {
+      title: 'Align multi-line labels in selector component',
+      type: 'Front-End',
+      description: 'Within the selector component, the multi-line labels were not aligned. This commit aligns the labels to be in the same position.'
+    },
+    {
+      title: 'Update mce, heatmap and brainstorm labels',
+      type: 'Back-End',
+      description: 'Updated the labels for a number of apps to be more accurate, in English, Dutch and German.'
+    },
+    {
+      title: 'Fix spacing in risk filter pane',
+      type: 'Front-End',
+      description: 'The spacing in the risk filter pane was not correct. This commit fixes the spacing in the risk filter pane.'
+    },
+    {
+      title: 'Add brainstorm risk delete button',
+      type: 'Front-End',
+      description: 'Brainstorm risk delete button was missing. This commit adds it back.'
+    },
+    {
+      title: 'Increase workspace-switcher width',
+      type: 'Front-End',
+      description: 'Increased the width of the workspace-switcher to fit the text.'
+    },
+    {
+      title: 'Added space for session location',
+      type: 'Front-End',
+      description: 'Space added to session location for better UI functionality.'
     },
   ];
 }
