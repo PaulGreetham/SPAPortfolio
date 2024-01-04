@@ -1,7 +1,32 @@
-<div *ngIf="item.title === 'Professional'" class="content">
-  <button (click)="toggleModal()">See Commit History</button>
+<div class="professional-section">
 
-  <app-modal [display]="showModal" (closeEvent)="toggleModal()">
-    <p>Details about educational experience...</p>
-  </app-modal>
+  <div class="header">
+    <div class="logo-column">
+      <a [href]="jobReference.companyWebsite" target="_blank" rel="noopener noreferrer">
+        <img [src]="jobReference.logoUrl" alt="{{ jobReference.companyName }}" class="company-logo">
+      </a>
+    </div>
+
+    <div class="details-column">
+      <p><strong>Company:</strong> {{ jobReference.companyName }}</p>
+      <p><strong>Position:</strong> {{ jobReference.jobTitle }}</p>
+      <p><strong>Start Date:</strong> {{ jobReference.startDate }}</p>
+      <p><strong>Location:</strong> {{ jobReference.location }}</p>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <p>{{ jobReference.info }}</p>
+    <ul>
+      <li *ngFor="let item of jobReference.dutiesAndTools">{{ item }}</li>
+    </ul>
+  </div>
+
+  <div *ngIf="item.title === 'Professional'" class="content">
+    <button (click)="toggleModal()">See Commit History</button>
+    <app-modal [display]="showModal" (closeEvent)="toggleModal()">
+      <p>Details about commit history...</p>
+    </app-modal>
+  </div>
+
 </div>
