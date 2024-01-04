@@ -56,11 +56,12 @@
       padding: 2rem;
 
       &:nth-child(odd) {  // Styles for odd-numbered items
-        background-color: white; // White background
+        color: white;
+        background-color: rgb(60, 72, 107); // White background
       }
 
       &:nth-child(even) { // Styles for even-numbered items
-        background-color: lightblue; // Light blue background
+        background-color: white; // Light blue background
       }
 
       h4 {
@@ -68,6 +69,7 @@
       }
       p {
         margin: 0;
+        font-weight: lighter;
       }
     }
   }

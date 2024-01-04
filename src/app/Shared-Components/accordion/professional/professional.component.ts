@@ -59,7 +59,7 @@ export class ProfessionalComponent {
     {
       title: 'Change color of all delete buttons to danger red',
       type: 'Front-End',
-      description: 'All delete buttons through the app were too similar to the other buttons. This commit changed the color of all delete buttons to danger red.'
+      description: 'All delete buttons throughout the app were too similar to the submit buttons. This commit changed the color of all delete buttons to danger red.'
     },
     {
       title: 'Enable full width of autocomplete to be clickable',
