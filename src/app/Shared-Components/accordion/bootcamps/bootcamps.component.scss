@@ -1,17 +1,18 @@
 .bootcamps-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
   height: 100%;
+  width: 100%;
+  gap: 4rem;
 
   .bootcamp {
+    padding-inline: 1rem;
 
     .row-header {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-      height: 40%;
+      justify-content: flex-start;
+      height: 35%;
 
       .logo-column {
         display: flex;
@@ -20,7 +21,7 @@
         width: 40%;
 
         .bootcamp-logo {
-          max-width: 8rem;
+          max-width: 7rem;
           height: auto;
           display: block;
           margin: 0 auto 10px; // Center logo with margin at the bottom
@@ -63,7 +64,7 @@
 
     // Row 2: Content List
     .content-row {
-      height: 60%;
+      height: 65%;
       font-size: 0.8rem;
 
       ul {
