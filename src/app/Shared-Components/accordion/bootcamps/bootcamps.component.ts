@@ -28,7 +28,7 @@ export class BootcampsComponent {
       endDate: 'September 2022',
       location: 'Amsterdam, Netherlands',
       info: 'Le Wagon was an intensive full-time 9-week full-stack web development bootcamp that focused on pair programming. Subjects and tools used include:',
-      contentList: this.splitContent('HTML * CSS & SCSS * JavaScript * Ruby * Ruby on Rails * Bootstrp * SQL * RESTful APIs * MVC Principles * VS Codee * GitHub * Heroku * AirBnB Clone * Pair Coding * Responsive * Mobile First * AJAX * Figma')
+      contentList: this.splitContent('HTML * CSS & SCSS * JavaScript * Ruby * Ruby on Rails * Bootstrp * SQL * RESTful APIs * MVC Principles * VS Code * GitHub * Heroku * AirBnB Clone * Pair Coding * Responsive * Mobile First * AJAX * Figma')
     },
   ];
 
