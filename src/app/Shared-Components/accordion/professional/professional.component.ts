@@ -41,8 +41,8 @@ export class ProfessionalComponent {
     startDate: 'April 2023',
     endDate: 'Present',
     location: 'Amersfoort, The Netherlands',
-    info: 'A brief description of the role and responsibilities.',
-    dutiesAndTools: ['Duty 1', 'Duty 2', 'Tool A', 'Tool B'],
+    info: 'RiskChallenger is a SaaS scale-up specialising in risk management software. Clients include Boskalis, Van Gelder, Van Oord, Alliander, Count & Cooper, as well as various Ministries of the Netherlands. Key information about thhe role:',
+    dutiesAndTools: ['Using Angular & TypeScript', 'Duty 2', 'Tool A', 'Tool B'],
   };
 
   openModalItem: string | null = null;

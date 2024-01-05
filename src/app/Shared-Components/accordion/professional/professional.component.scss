@@ -1,3 +1,5 @@
+@import '../../../Shared-Styles/_fonts';
+
 .professional-section {
   display: flex;
   flex-direction: column;
@@ -19,7 +21,7 @@
       justify-content: center;
 
       height: 100%;
-      width: 30%;
+      width: 20%;
 
       .company-logo {
         height: 100%;
@@ -38,13 +40,19 @@
       justify-content: space-evenly;
 
       height: 100%;
-      width: 70%;
+      width: 100%;
+
+      padding-left: 2rem;
 
       p {
         margin: 0;
       };
     }
   }
+}
+
+.info-section {
+  column-count: 2;
 }
 
 .commit-list {
@@ -75,5 +83,23 @@
         font-weight: lighter;
       }
     }
+  }
+}
+
+.modal-open-button {
+  font-family: $primary-font;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(60, 72, 107);
+  width: max-content;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    scale: 0.97;
+    transition: 0.3s ease-in-out;
   }
 }
