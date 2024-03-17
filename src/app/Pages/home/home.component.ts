@@ -19,7 +19,7 @@ export class HomeComponent {
   }
 
   initLettersWithDelay() {
-    let delay = 2.5; // Start delay for the name
+    let delay = 2.1; // Start delay for the name
     const increment = 0.1;
 
     for (const char of this.name) {
@@ -32,7 +32,7 @@ export class HomeComponent {
     }
 
     // Additional delay before starting the subtitle
-    delay += 2.5;
+    delay += 2.25;
 
     for (const char of this.subtitle) {
       if (char !== ' ') {
