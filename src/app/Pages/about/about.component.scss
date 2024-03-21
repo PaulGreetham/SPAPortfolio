@@ -43,7 +43,7 @@ h1 {
   display: flex;
   align-items: flex-start;
   height: 66vh;
-  padding: 2rem;
+  padding: 3rem;
 
   .text-column {
     width: 70%;
@@ -97,7 +97,7 @@ h1 {
 
     .all-section-content {
       overflow-y: auto;
-      max-height: calc(61vh - 6rem);
+      max-height: calc(58vh - 6rem);
     }
 
     h4 {
