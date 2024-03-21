@@ -74,11 +74,11 @@ button {
     padding-left: 1rem;
     transition: scale 0.3s ease-in-out;
     cursor: pointer;
+  }
 
-    &:hover {
-      scale: 0.98;
-      transition: scale 0.3s ease-in-out;
-    }
+  &:hover {
+    scale: 0.98;
+    transition: scale 0.3s ease-in-out;
   }
 
   &:active,
@@ -92,8 +92,6 @@ button {
   &.open {
     background-color: rgb(249, 217, 73);
     height: 100%;
-    padding: 18px;
-    scale: 1.03;
     transition: 0.3s ease-in-out;
   }
 
