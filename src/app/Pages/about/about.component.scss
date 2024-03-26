@@ -46,10 +46,27 @@ h1 {
   padding: 3rem;
 
   .text-column {
+    position: relative;
     width: 70%;
     overflow-y: auto;
     position: relative;
     margin-right: 3rem;
+
+    .all-section-content {
+      overflow-y: auto;
+      max-height: calc(58vh - 6rem);
+
+      .fade-effect-overlay {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: linear-gradient(to bottom, transparent, white);
+        pointer-events: none;
+      }
+    }
 
     .text-navbar {
       display: flex;
