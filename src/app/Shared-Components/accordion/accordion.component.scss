@@ -53,6 +53,7 @@ button {
   background-color: transparent;
   border: none;
   transition: scale 0.3s ease-in-out;
+  cursor: pointer;
   animation: fadeInFromLeft 0.5s ease-out forwards;
   opacity: 0; /* Ensure the button is initially invisible */
   animation-delay: calc(0.75s + var(--index) * 0.25s);
@@ -73,7 +74,6 @@ button {
     justify-content: flex-start;
     padding-left: 1rem;
     transition: scale 0.3s ease-in-out;
-    cursor: pointer;
   }
 
   &:hover {
