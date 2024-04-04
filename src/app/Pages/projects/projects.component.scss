@@ -22,19 +22,17 @@ h1 {
   margin: 0;
   letter-spacing: 0.25rem;
 
-  opacity: 0;
-  transform: translateX(-30px);
-  animation: fadeInFromLeft 0.5s ease-out;
+  animation: fadeInFromTop 0.25s ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeInFromLeft {
+@keyframes fadeInFromTop {
   from {
-    transform: translateX(-25px);
+    transform: translateY(-5px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
