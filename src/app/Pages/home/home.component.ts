@@ -32,7 +32,7 @@ export class HomeComponent {
     }
 
     // Additional delay before starting the subtitle
-    delay += 1.75;
+    delay += 0.8;
 
     for (const char of this.subtitle) {
       if (char !== ' ') {
