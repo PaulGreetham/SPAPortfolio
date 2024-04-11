@@ -36,6 +36,6 @@ import { BootcampsComponent } from './Shared-Components/accordion/bootcamps/boot
     ]
 })
 export class AppComponent {
-  title = 'SPAPortfolio';
+  title = 'Paul Greetham Personal Website';
   selectedSection = 'home';
 }
