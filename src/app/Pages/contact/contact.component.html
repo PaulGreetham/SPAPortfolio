@@ -3,21 +3,34 @@
 </header>
 
 <section class="contact-container">
-  <header class="contact-header">
-    <h6>reach out to me using either of the contact methods below</h6>
-  </header>
-
-  <a href="mailto:pgreetham@protonmail.com" class="contact-card-link">
-    <div class="contact-card" id="email-card">
-      <h3>email me</h3>
-      <span class="contact-link">click</span>
+  <!-- Left section for buttons/links -->
+  <div class="contact-links">
+    <div class="contact-buttons">
+      <button onclick="window.open('https://www.linkedin.com/in/paul-greetham/', '_blank')">LinkedIn
+        <i class="fab fa-linkedin"></i>
+      </button>
+      <button onclick="window.open('https://github.com/PaulGreetham', '_blank')">GitHub
+        <i class="fab fa-github"></i>
+      </button>
+      <button onclick="window.open('https://gitlab.com/PaulGreetham', '_blank')">GitLab
+        <i class="fab fa-gitlab"></i>
+      </button>
+      <button onclick="window.location.href='mailto:pgreetham@protonmail.com'">Email Me
+        <i class="fas fa-envelope"></i>
+      </button>
+      <button onclick="window.location.href='tel:+1234567890'">Call Me
+        <i class="fas fa-phone"></i>
+      </button>
     </div>
-  </a>
+  </div>
 
-  <a href="tel:+31683674176" class="contact-card-link">
-    <div class="contact-card" id="phone-card">
-      <h3>call me</h3>
-      <span class="contact-link">+31 6 83 674 176</span>
-    </div>
-  </a>
+  <!-- Right section for text -->
+  <div class="contact-info">
+    <h3>More Information</h3>
+    <p>
+      Please feel free to reach out to me using any of the methods listed to the left.
+      I look forward to hearing from you and discussing potential opportunities or projects.
+    </p>
+    <!-- Additional text can be added here -->
+  </div>
 </section>
