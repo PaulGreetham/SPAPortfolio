@@ -33,7 +33,8 @@ button {
   cursor: pointer;
   animation: fadeInFromLeft 0.5s ease-out forwards;
   opacity: 0; /* Ensure the button is initially invisible */
-  animation-delay: calc(0.75s + var(--index) * 0.25s);
+  // animation-delay: calc(1.75s + var(--index) * 0.25s);
+  animation-delay: calc(2s + (4 - var(--index)) * 0.25s);
 
   @keyframes fadeInFromLeft {
     from {
