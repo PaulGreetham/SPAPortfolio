@@ -28,9 +28,12 @@ export class AccordionComponent {
   showModal = false;
   activeToolsSection: 'frequentlyUsed' | 'infrequentlyUsed' | null = null;
 
+  ngOnInit() {
+    this.toggleSection('Stack & Tools');
+  }
+
   toggleSection(section: string) {
     this.openSection = (this.openSection === section) ? null : section;
-    this.activeToolsSection = null;
   }
 
   setActiveToolsSection(section: 'frequentlyUsed' | 'infrequentlyUsed') {

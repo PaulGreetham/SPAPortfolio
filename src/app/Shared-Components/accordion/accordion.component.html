@@ -5,7 +5,6 @@
       (click)="toggleSection(item.title)"
       [class.open]="openSection === item.title"
       [class.closed]="openSection !== item.title"
-      [class.hide-chevron]="isAnySectionOpen()"
       [style.--index]="i"
     >
       <span>{{ item.title }}</span>

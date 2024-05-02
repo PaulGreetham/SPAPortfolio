@@ -17,29 +17,7 @@
 
   button:first-child {
     position: relative;
-
-    &::after {
-      color: white;
-      content: '<';
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 3rem;
-      opacity: 0;
-      animation: blink-animation 1s infinite;
-      animation-delay: 3s;
-    }
-
-    &.hide-chevron::after {
-      display: none; // Hide the chevron
-    }
   }
-}
-
-@keyframes blink-animation {
-  0%, 100%   { opacity: 0; }
-  50%  { opacity: 1; }
 }
 
 /* Style for the individual accordion buttons */
