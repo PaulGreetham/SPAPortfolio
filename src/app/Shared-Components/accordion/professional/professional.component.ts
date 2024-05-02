@@ -17,7 +17,7 @@ export interface JobReference {
 
 export interface GitCommit {
   title: string;
-  type: 'Front-End' | 'Back-End' | 'Full-Stack';
+  type: 'Front-End' | 'Back-End' | 'Testing' | 'Full-Stack';
   description: string;
 }
 
@@ -59,24 +59,99 @@ export class ProfessionalComponent {
 
   gitCommits: GitCommit[] = [
     {
-      title: 'Change color of all delete buttons to danger red',
+      title: 'Stop risk text from overlapping info icon',
       type: 'Front-End',
-      description: 'All delete buttons throughout the app were too similar to the submit buttons. This commit changed the color of all delete buttons to danger red.'
+      description: 'This commit adds a background to the info icon in the navigation bar to prevent the risk text from overlapping it.'
     },
     {
-      title: 'Enable full width of autocomplete to be clickable',
+      title: 'Tirgger autofocus on variable specific tabs for all users',
       type: 'Front-End',
+      description: 'Currently, only the creator can trigger autofocus on the tabs. This commit changes the behavior to allow all users to trigger autofocus on the tabs.'
+    },
+    {
+      title: 'Change enter button and style of comment input',
+      type: 'Front-End',
+      description: 'This commit changes the text area to an input field, changes the button to an icon and allows the user to press Enter key to save the comment.'
+    },
+    {
+      title: 'Add test for qr code modal component',
+      type: 'Testing',
+      description: 'Adding component test as part of new main feature.'
+    },
+    {
+      title: 'Remove participant ability to archive risk',
+      type: 'Front-End',
+      description: 'This commit removes the ability for a participant to archive a risk. This is because the participant should not be able to archive a risk, only the faciliatator.'
+    },
+    {
+      title: 'Amend date positioning so longer text does not affect format',
+      type: 'Front-End',
+      description: 'This commit amends the date positioning so that longer text does not affect the display format.'
+    },
+    {
+      title: 'Create and fix the explainer component styling and modal',
+      type: 'Front-End',
+      description: 'Create new explainer component and change display modal depending on which tab is active.'
+    },
+    {
+      title: 'Enable facilitator back button function',
+      type: 'Front-End',
+      description: 'This commit enables the facilitator to click on the left-chevron icon which navigates the user back to the previous project page.'
+    },
+    {
+      title: 'Enable input validation and add group modal component tests',
+      type: 'Front-End',
+      description: 'The group modal component now has input validation and tests to ensure that the component works as expected, including notOnlyWhitespace validation.'
+    },
+    {
+      title: 'Improve visual calrity of feature section',
+      type: 'Front-End',
+      description: 'This commit amends the styling for the masonary section within the feature app.'
+    },
+    {
+      title: 'Add tests for navigation-tabs component',
+      type: 'Testing',
       description: 'This commit fixes the issue where the autocomplete dropdown was not clickable when the dropdown was wider than the input field.'
+    },
+    {
+      title: 'Add component tests for profile-modal component',
+      type: 'Testing',
+      description: 'App used legacy node-excel-export dependency. This commit replaces it with the more modern xlsx dependency.'
+    },
+    {
+      title: 'Add component tests for finished-page component',
+      type: 'Testing',
+      description: 'Disabled button when variable is enabled. This commit removes the button from the UI when the variable is enabled.'
+    },
+    {
+      title: 'Add component tests for variable-modal component',
+      type: 'Testing',
+      description: 'This commit adds component tests for the variable modal component.'
+    },
+    {
+      title: 'Update english translation of file to register',
+      type: 'Back-End',
+      description: 'This commit changes the English translation of file to register. It changes the tranlsation files, tests and also the database seeds. It also changes the other project types file to register.'
+    },
+    {
+      title: 'Remove description button when Fine/Kinney&Wiruth is enabled',
+      type: 'Front-End',
+      description: 'The remove descriptions button is still visible (and working) in the quantifiers setup when the impact formula Fine / Kinney&Wiruth is used, while the use of descriptions is mandatory.'
+    },
+    {
+      title: 'Ensure browser language preference is used when opening app',
+      type: 'Back-End',
+      description: 'This commit ensures that the browser language preference is used when opening the app. If the browser language preference is not supported, then the default language will be used.'
     },
     {
       title: 'Replace node-excel-export dependency with xlsx',
       type: 'Back-End',
-      description: 'App used legacy node-excel-export dependency. This commit replaces it with the more modern xlsx dependency.'
+      description: 'We use the node-excel-export package for legacy relatics exporter. This package has not been updated for several years, same for the used dependencies. This leads to some vulnerabilities being present in this package.'
     },
     {
-      title: 'Remove description button when variable is enabled',
+      title: 'Change color of all delete buttons to danger red',
       type: 'Front-End',
-      description: 'Disabled button when variable is enabled. This commit removes the button from the UI when the variable is enabled.'
+      description: 'All delete buttons were not defined as danger buttons. User feedback was that they were not visible enough. This commit changes the color of all delete buttons to danger red.'
     },
     {
       title: 'Create custom export file functionality',
