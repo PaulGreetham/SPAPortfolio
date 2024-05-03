@@ -58,7 +58,7 @@ h1 {
       background-size: 200% 100%;
       background-position: right;
       opacity: 0;
-      animation: appear 1s 6s forwards, flashBackground 6s 8s infinite; // Adjust total animation time
+      animation: appear 1s 6s forwards, flashBackground 6s 8s infinite;
 
       &:hover {
         color: white;
@@ -74,10 +74,10 @@ h1 {
 
     @keyframes flashBackground {
       0%, 16.67%, 83.33%, 100% {
-        background-position: right; // Full transparent, adjusts for the new timing
+        background-position: right;
       }
       16.67%, 50% {
-        background-position: left; // Full color, maintains for a shorter duration
+        background-position: left;
       }
     }
   }
