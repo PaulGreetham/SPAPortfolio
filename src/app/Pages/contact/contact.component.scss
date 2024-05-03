@@ -55,6 +55,11 @@ h1 {
 
   .contact-buttons {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 100%;
 
     button {
       color: white;
@@ -63,7 +68,6 @@ h1 {
       align-items: center;
       font-family: $primary-font;
       font-size: 1.5rem;
-      margin-bottom: 0.5rem;
       padding: 1rem;
       width: 100%;
       background-color: rgb(60, 72, 107);
@@ -115,26 +119,4 @@ h1 {
   p {
     width: 60%;
   }
-}
-
-.contact-links ul {
-  display: flex;
-  flex-direction: column;
-  align-items: self-end;
-  list-style: none;
-  padding: 0;
-  width: 60%;
-}
-
-.contact-links li {
-  margin-bottom: 10px;
-}
-
-.contact-links a {
-  text-decoration: none;
-  color: #0077cc;
-}
-
-.contact-links a:hover {
-  text-decoration: underline;
 }

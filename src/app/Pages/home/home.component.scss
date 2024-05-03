@@ -44,6 +44,42 @@ h1 {
   .left-column {
     width: 25%;
     background-color: white;
+
+    .navigate-button {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      padding: 1rem;
+      color: white;
+      border: 0.25rem solid rgb(60, 72, 107);
+      font-size: 2rem;
+      cursor: pointer;
+      background: linear-gradient(to right, rgb(60, 72, 107) 50%, transparent 50%);
+      background-size: 200% 100%;
+      background-position: right;
+      opacity: 0;
+      animation: appear 1s 6s forwards, flashBackground 6s 8s infinite; // Adjust total animation time
+
+      &:hover {
+        color: white;
+        background-color: rgb(60, 72, 107);
+        transform: scale(0.97);
+      }
+    }
+
+    @keyframes appear {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes flashBackground {
+      0%, 16.67%, 83.33%, 100% {
+        background-position: right; // Full transparent, adjusts for the new timing
+      }
+      16.67%, 50% {
+        background-position: left; // Full color, maintains for a shorter duration
+      }
+    }
   }
 
   .right-column {
