@@ -73,10 +73,10 @@ h1 {
     }
 
     @keyframes flashBackground {
-      0%, 16.67%, 83.33%, 100% {
+      0%, 17%, 83%, 100% {
         background-position: right;
       }
-      16.67%, 50% {
+      17%, 50% {
         background-position: left;
       }
     }
