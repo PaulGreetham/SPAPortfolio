@@ -88,10 +88,9 @@ h1 {
         text-decoration: none;
         color: white;
         background-color: rgb(60, 72, 107);
-        transition: 0.3s ease-in-out;
-        opacity: 0; /* Start hidden */
-        animation: fadeInFromBottom 0.4s ease-out forwards;
-        animation-delay: calc(0.3s * var(--index)); /* Stagger based on index */
+        opacity: 0;
+        transition: scale 0.3s ease-in-out;
+        animation: fadeInFromBottom 0.3s ease-out forwards;
 
         &:hover {
           scale: 0.97;
@@ -112,20 +111,19 @@ h1 {
         }
       }
 
-      /* Apply a unique index to each link to stagger the animation */
-      .a:nth-child(1) { animation-delay: 0.5s; }
-      .a:nth-child(2) { animation-delay: 0.75s; }
-      .a:nth-child(3) { animation-delay: 1s; }
-      .a:nth-child(4) { animation-delay: 1.25s; }
-      .a:nth-child(5) { animation-delay: 1.5s; }
+      a:nth-child(1) { animation-delay: 0.5s; }
+      a:nth-child(2) { animation-delay: 0.75s; }
+      a:nth-child(3) { animation-delay: 1s; }
+      a:nth-child(4) { animation-delay: 1.25s; }
+      a:nth-child(5) { animation-delay: 1.5s; }
 
       @keyframes fadeInFromBottom {
         from {
-          transform: translateX(15px);
+          transform: translateY(15px);
           opacity: 0;
         }
         to {
-          transform: translateX(0);
+          transform: translateY(0);
           opacity: 1;
         }
       }
@@ -139,7 +137,7 @@ h1 {
     .all-section-content, .photo-column {
       animation: fadeIn 1s ease-out forwards;
       opacity: 0;
-      animation-delay: 1.5s;
+      animation-delay: 2s;
 
       @keyframes fadeIn {
         from {
@@ -170,7 +168,7 @@ h1 {
     align-items: center;
     opacity: 0;
     animation: fadeInFromRight 0.3s ease-out forwards;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
 
     img {
       width: 100%;
