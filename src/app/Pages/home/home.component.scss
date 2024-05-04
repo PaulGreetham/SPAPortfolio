@@ -51,14 +51,14 @@ h1 {
       left: 2rem;
       padding: 1rem;
       color: white;
-      border: 0.25rem solid rgb(60, 72, 107);
+      border: none;
       font-size: 2rem;
       cursor: pointer;
       background: linear-gradient(to right, rgb(60, 72, 107) 50%, transparent 50%);
       background-size: 200% 100%;
       background-position: right;
       opacity: 0;
-      animation: appear 1s 6s forwards, flashBackground 6s 8s infinite;
+      animation: appear 1s 8s forwards, flashBackground 6s 10s infinite;
 
       &:hover {
         color: white;
