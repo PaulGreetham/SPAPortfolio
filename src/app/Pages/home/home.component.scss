@@ -39,6 +39,7 @@ h1 {
 
 .home-container {
   display: flex;
+  justify-content: space-between;
   height: 66vh;
 
   .left-column {
@@ -82,7 +83,7 @@ h1 {
   }
 
   .right-column {
-    width: 75%;
+    width: 70%;
     padding-right: 0;
 
     h2 {
