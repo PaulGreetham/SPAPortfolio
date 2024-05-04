@@ -71,11 +71,11 @@ h1 {
 
     @keyframes flashBackground {
       0%, 20%, 80%, 100% {
-        background-position: right; // Stay transparent longer
+        background-position: right;
         opacity: 1;
       }
       20%, 60% {
-        background-position: left; // Stay colored
+        background-position: left;
         opacity: 1;
       }
     }
