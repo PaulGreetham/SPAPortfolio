@@ -10,7 +10,7 @@ header {
   display: flex;
   align-items: center;
   color: white;
-  background-color: rgb(244, 80, 80);;
+  background-color: rgb(244, 80, 80);
   height: 24vh;
   padding: 3rem;
 }
@@ -21,7 +21,6 @@ h1 {
   font-weight: lighter;
   margin: 0;
   letter-spacing: 0.25rem;
-
   animation: fadeInFromTop 0.25s ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -38,14 +37,13 @@ h1 {
 }
 
 .projects-container {
-  display: flex;
-  justify-content: space-between; /* Adjust this as needed */
-  flex-wrap: wrap;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Creates two columns
+  grid-gap: 2rem; // 2rem gap between both rows and columns
+  margin: 2rem;
   height: 66vh;
-  padding: 2rem;
 }
 
-app-card {
-  flex: 0 0 23%; /* Adjust this percentage to account for margins */
-}
+// app-card {
+//   // If necessary, define specific styles or overrides for the card here
+// }
