@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProjectCard } from '../../models/project-card.interface';
 
 @Component({
   selector: 'app-card',
@@ -9,7 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() content: any; // Adjust the type as per your content structure
+  @Input() content!: ProjectCard;
   @Input() cardId: string | undefined;
-  @Input() animationDelayClass: string | undefined;
 }

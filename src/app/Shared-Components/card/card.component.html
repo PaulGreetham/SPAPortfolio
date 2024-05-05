@@ -1,6 +1,24 @@
-<div class="card" [id]="cardId" [ngClass]="animationDelayClass">
-  <!-- Use content input to display data -->
+<div class="card" [id]="cardId">
+  <!-- Project Image -->
+  <img src="{{ content.imageUrl }}" alt="{{ content.title }} image">
+
+  <!-- Project Name -->
   <h3>{{ content.title }}</h3>
+
+  <!-- Project Description -->
   <p>{{ content.description }}</p>
-  <!-- Add more content as needed -->
+
+  <!-- Tech Stack Used -->
+  <div class="tech-stack">
+    <div *ngFor="let tech of content.techStack" class="tech-item">
+      <img src="{{ tech.logoUrl }}" alt="{{ tech.name }} logo" class="tech-logo">
+      <span>{{ tech.name }}</span>
+    </div>
+  </div>
+
+  <!-- Link to External Website -->
+  <a href="{{ content.websiteUrl }}" target="_blank" rel="noopener">Visit Website</a>
+
+  <!-- Link to GitHub Repo -->
+  <a href="{{ content.githubUrl }}" target="_blank" rel="noopener">GitHub Repo</a>
 </div>

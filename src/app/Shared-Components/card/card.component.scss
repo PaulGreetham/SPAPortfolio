@@ -1,15 +1,77 @@
-.card {
-  height: 100%;
-  width: 100%;
-  border: 0.5px solid gray;
-  animation: fadeInFromBottom 0.5s ease-out forwards;
-  animation-fill-mode: both;
-  transition: scale 0.3s;
-  cursor: pointer;
+// .card {
+//   height: 100%;
+//   width: 100%;
+//   border: 0.5px solid gray;
+//   animation: fadeInFromBottom 0.5s ease-out forwards;
+//   animation-fill-mode: both;
+//   transition: scale 0.3s;
+//   cursor: pointer;
 
-  &:hover {
-    scale: 0.97;
-    transition: scale 0.3s;
+//   &:hover {
+//     scale: 0.97;
+//     transition: scale 0.3s;
+//   }
+// }
+
+// @keyframes fadeInFromBottom {
+//   from {
+//     transform: translateY(30px);
+//     opacity: 0;
+//   }
+//   to {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+// .animate-delay-1 { animation-delay: 0.25s; }
+// .animate-delay-2 { animation-delay: 0.5s; }
+// .animate-delay-3 { animation-delay: 0.75s; }
+// .animate-delay-4 { animation-delay: 1s; }
+// .animate-delay-5 { animation-delay: 1.25s; }
+// .animate-delay-6 { animation-delay: 1.5s; }
+
+
+.card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+  animation: fadeInFromBottom 0.5s ease-out forwards;
+  transition: transform 0.3s ease;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .tech-item {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem;
+
+      .tech-logo {
+        width: 5px; // Adjust size as needed
+        height: 5px;
+        margin-right: 0.1rem;
+      }
+    }
+  }
+
+  a {
+    color: blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -23,10 +85,3 @@
     opacity: 1;
   }
 }
-
-.animate-delay-1 { animation-delay: 0.25s; }
-.animate-delay-2 { animation-delay: 0.5s; }
-.animate-delay-3 { animation-delay: 0.75s; }
-.animate-delay-4 { animation-delay: 1s; }
-.animate-delay-5 { animation-delay: 1.25s; }
-.animate-delay-6 { animation-delay: 1.5s; }
