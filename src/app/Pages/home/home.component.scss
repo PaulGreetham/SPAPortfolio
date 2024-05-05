@@ -43,13 +43,15 @@ h1 {
   height: 66vh;
 
   .left-column {
-    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     background-color: white;
+    width: 30%;
+    padding: 2rem;
 
     .navigate-to-about-button {
       position: absolute;
-      bottom: 2rem;
-      left: 2rem;
       padding: 1rem;
       color: white;
       border: none;
