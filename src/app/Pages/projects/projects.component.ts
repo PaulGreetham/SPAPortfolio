@@ -46,7 +46,7 @@ export class ProjectsComponent {
       id: 'card-3',
       title: 'Project 3',
       description: 'Description 3',
-      imageUrl: 'assets/images/project1.jpg',
+      imageUrl: '/assets/project-images/onehundredsquares.png',
       techStack: [
         { name: 'Angular', logoUrl: 'assets/logos/angular.png' },
         { name: 'TypeScript', logoUrl: 'assets/logos/typescript.png' },
