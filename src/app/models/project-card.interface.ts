@@ -1,5 +1,4 @@
 export interface TechStackItem {
-  name: string;
   logoUrl: string;
 }
 

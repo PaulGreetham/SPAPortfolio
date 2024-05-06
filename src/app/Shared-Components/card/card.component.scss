@@ -40,9 +40,15 @@
   animation: fadeInFromBottom 0.5s ease-out forwards;
   transition: transform 0.3s ease;
 
+  .project-image-container {
+    display: flex;
+    width: 30%;
+  }
+
   img {
     display: flex;
     width: 100%;
+    padding: 0.75rem;
   }
 
   .tech-stack {
@@ -57,9 +63,9 @@
       margin: 0.5rem;
 
       .tech-logo {
-        width: 5px; // Adjust size as needed
-        height: 5px;
-        margin-right: 0.1rem;
+        width: 10px; // Control the size to fit your design
+        height: 10px;
+        margin-right: 5px; // Add margin if needed
       }
     }
   }
