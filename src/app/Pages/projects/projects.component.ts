@@ -49,7 +49,7 @@ export class ProjectsComponent {
       techStack: [
         { logoUrl: 'assets/logos/Angular.png' },
         { logoUrl: 'assets/logos/Typescript.png' },
-        { logoUrl: 'assets/logos/CSS.png' }
+        { logoUrl: 'assets/logos/SCSS.png' }
       ],
       websiteUrl: 'https://onehundredsquares.netlify.app/',
       githubUrl: 'https://github.com/PaulGreetham/onehundredsquares'

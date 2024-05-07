@@ -1,5 +1,9 @@
 @import '../../Shared-Styles/_fonts';
 
+app-card {
+  height: 90%;
+}
+
 .card {
   display: flex;
   align-items: center;
@@ -24,7 +28,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     height: 100%;
     width: 40%;
 
@@ -41,6 +44,7 @@
   .end-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     width: 30%;
     gap: 0.5rem;
@@ -64,11 +68,15 @@
     .external-links {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       height: 65%;
+      gap: 0.5rem;
 
       button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: white;
         background-color: rgb(60, 72, 107);
         font-family: $primary-font;
@@ -88,6 +96,11 @@
         a {
           color: white;
           text-decoration: none;
+        }
+
+        i {
+          font-size: 1rem;
+          padding-left: 0.5rem;
         }
       }
     }
