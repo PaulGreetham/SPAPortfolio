@@ -17,13 +17,14 @@ export class ProjectsComponent {
   protected cards: ProjectCard[] = [
     {
       id: 'card-1',
-      title: 'Project wwwwhhhaaattt',
+      title: 'Workout Warrior',
       description: 'Description 1',
       imageUrl: 'assets/images/project1.jpg',
       techStack: [
-        { logoUrl: 'assets/logos/angular.png' },
-        { logoUrl: 'assets/logos/typescript.png' },
-        { logoUrl: 'assets/logos/css3.png' }
+        { logoUrl: 'assets/logos/React.png' },
+        { logoUrl: 'assets/logos/Javascript.png' },
+        { logoUrl: 'assets/logos/Node.png' },
+        { logoUrl: 'assets/logos/SCSS.png' }
       ],
       websiteUrl: 'https://example.com',
       githubUrl: 'https://github.com/example/project1'
@@ -49,6 +50,7 @@ export class ProjectsComponent {
       techStack: [
         { logoUrl: 'assets/logos/Angular.png' },
         { logoUrl: 'assets/logos/Typescript.png' },
+        { logoUrl: 'assets/logos/Node.png' },
         { logoUrl: 'assets/logos/SCSS.png' }
       ],
       websiteUrl: 'https://onehundredsquares.netlify.app/',
