@@ -1,81 +1,95 @@
-// .card {
-//   height: 100%;
-//   width: 100%;
-//   border: 0.5px solid gray;
-//   animation: fadeInFromBottom 0.5s ease-out forwards;
-//   animation-fill-mode: both;
-//   transition: scale 0.3s;
-//   cursor: pointer;
-
-//   &:hover {
-//     scale: 0.97;
-//     transition: scale 0.3s;
-//   }
-// }
-
-// @keyframes fadeInFromBottom {
-//   from {
-//     transform: translateY(30px);
-//     opacity: 0;
-//   }
-//   to {
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-// }
-
-// .animate-delay-1 { animation-delay: 0.25s; }
-// .animate-delay-2 { animation-delay: 0.5s; }
-// .animate-delay-3 { animation-delay: 0.75s; }
-// .animate-delay-4 { animation-delay: 1s; }
-// .animate-delay-5 { animation-delay: 1.25s; }
-// .animate-delay-6 { animation-delay: 1.5s; }
-
+@import '../../Shared-Styles/_fonts';
 
 .card {
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
-  margin: 1rem;
+
+  height: 100%;
+  padding: 1rem;
+  gap: 1rem;
   animation: fadeInFromBottom 0.5s ease-out forwards;
   transition: transform 0.3s ease;
 
   .project-image-container {
-    display: flex;
+    height: 100%;
     width: 30%;
-  }
 
-  img {
-    display: flex;
-    width: 100%;
-    padding: 0.75rem;
-  }
-
-  .tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    .tech-item {
-      display: flex;
-      align-items: center;
-      margin: 0.5rem;
-
-      .tech-logo {
-        width: 10px; // Control the size to fit your design
-        height: 10px;
-        margin-right: 5px; // Add margin if needed
-      }
+    img {
+      width: 100%;
     }
   }
 
-  a {
-    color: blue;
-    text-decoration: none;
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-    &:hover {
-      text-decoration: underline;
+    height: 100%;
+    width: 40%;
+
+    h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.6rem;
+    }
+  }
+
+  .end-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    gap: 0.5rem;
+
+    .tech-stack {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 35%;
+
+      .tech-item {
+        display: flex;
+        align-items: center;
+
+        .tech-logo {
+          width: 2rem;
+        }
+      }
+    }
+
+    .external-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 65%;
+
+      button {
+        color: white;
+        background-color: rgb(60, 72, 107);
+        font-family: $primary-font;
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 0.35rem;
+        border: none;
+        transition: scale 0.3s ease-in-out;
+        cursor: pointer;
+        animation: fadeInFromLeft 0.5s ease-out forwards;
+
+        &:hover {
+          scale: 0.98;
+          transition: scale 0.3s ease-in-out;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

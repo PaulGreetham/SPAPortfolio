@@ -34,25 +34,25 @@ export class ProjectsComponent {
       description: 'Description 2',
       imageUrl: 'assets/images/project1.jpg',
       techStack: [
-        { logoUrl: 'assets/logos/Angular.png' },
-        { logoUrl: 'assets/logos/Typescript.png' },
-        { logoUrl: 'assets/logos/Css.png' }
+        { logoUrl: 'assets/logos/angular.png' },
+        { logoUrl: 'assets/logos/typescript.png' },
+        { logoUrl: 'assets/logos/css.png' }
       ],
       websiteUrl: 'https://example.com',
       githubUrl: 'https://github.com/example/project1'
     },
     {
       id: 'card-3',
-      title: 'Project 3',
-      description: 'Description 3',
+      title: 'One Hundered Squares',
+      description: 'One Hundred Squares is a responsive Angular application that fetches and displays 100 posts from the jsonplaceholder API in a 10x10 grid of interactive squares.',
       imageUrl: '/assets/project-images/onehundredsquares.png',
       techStack: [
-        { logoUrl: 'assets/logos/angular.png' },
-        { logoUrl: 'assets/logos/typescript.png' },
-        { logoUrl: 'assets/logos/css3.png' }
+        { logoUrl: 'assets/logos/Angular.png' },
+        { logoUrl: 'assets/logos/Typescript.png' },
+        { logoUrl: 'assets/logos/CSS.png' }
       ],
-      websiteUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example/project1'
+      websiteUrl: 'https://onehundredsquares.netlify.app/',
+      githubUrl: 'https://github.com/PaulGreetham/onehundredsquares'
     },
     {
       id: 'card-4',

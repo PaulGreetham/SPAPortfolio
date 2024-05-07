@@ -39,8 +39,9 @@ h1 {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); // Creates two columns
-  margin: 1rem;
+  margin: 2rem;
   height: 66vh;
+  gap: 1rem;
 }
 
 // app-card {

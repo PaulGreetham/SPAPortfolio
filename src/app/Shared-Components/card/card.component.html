@@ -1,25 +1,23 @@
 <div class="card" [id]="cardId">
-  <!-- Project Image -->
-  <div class="project-image-container">
+  <section class="project-image-container">
     <img src="{{ content.imageUrl }}" alt="{{ content.title }} image">
-  </div>
+  </section>
 
-  <!-- Project Name -->
-  <h3>{{ content.title }}</h3>
+  <section class="details">
+    <h3>{{ content.title }}</h3>
+    <p>{{ content.description }}</p>
+  </section>
 
-  <!-- Project Description -->
-  <p>{{ content.description }}</p>
+  <section class="end-section">
+    <section class="tech-stack">
+      <div *ngFor="let tech of content.techStack" class="tech-item">
+        <img src="{{ tech.logoUrl }}" alt="Logo" class="tech-logo">
+      </div>
+    </section>
 
-  <!-- Tech Stack Used -->
-  <div class="tech-stack">
-    <div *ngFor="let tech of content.techStack" class="tech-item">
-      <img src="{{ tech.logoUrl }}" alt="Logo" class="tech-logo">
-    </div>
-  </div>
-
-  <!-- Link to External Website -->
-  <a href="{{ content.websiteUrl }}" target="_blank" rel="noopener">Visit Website</a>
-
-  <!-- Link to GitHub Repo -->
-  <a href="{{ content.githubUrl }}" target="_blank" rel="noopener">GitHub Repo</a>
+    <section class="external-links">
+      <button><a href="{{ content.websiteUrl }}" target="_blank" rel="noopener">Visit Website</a></button>
+      <button><a href="{{ content.githubUrl }}" target="_blank" rel="noopener">GitHub Repo</a></button>
+    </section>
+  </section>
 </div>
