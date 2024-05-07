@@ -19,28 +19,29 @@ export class ProjectsComponent {
       id: 'card-1',
       title: 'Workout Warrior',
       description: 'Description 1',
-      imageUrl: 'assets/images/project1.jpg',
+      imageUrl: 'assets/project-images/workoutwarrior.png',
       techStack: [
         { logoUrl: 'assets/logos/React.png' },
         { logoUrl: 'assets/logos/Javascript.png' },
         { logoUrl: 'assets/logos/Node.png' },
-        { logoUrl: 'assets/logos/SCSS.png' }
+        { logoUrl: 'assets/logos/CSS.png' }
       ],
-      websiteUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example/project1'
+      websiteUrl: 'https://workout-warrior.netlify.app/',
+      githubUrl: 'https://github.com/PaulGreetham/workout-warrior'
     },
     {
       id: 'card-2',
-      title: 'Project 2',
+      title: 'Academic Profile',
       description: 'Description 2',
-      imageUrl: 'assets/images/project1.jpg',
+      imageUrl: 'assets/project-images/academic.png',
       techStack: [
-        { logoUrl: 'assets/logos/angular.png' },
-        { logoUrl: 'assets/logos/typescript.png' },
-        { logoUrl: 'assets/logos/css.png' }
+        { logoUrl: 'assets/logos/Angular.png' },
+        { logoUrl: 'assets/logos/Typescript.png' },
+        { logoUrl: 'assets/logos/Node.png' },
+        { logoUrl: 'assets/logos/SCSS.png' }
       ],
-      websiteUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example/project1'
+      websiteUrl: 'https://dagmarheinrich.netlify.app/',
+      githubUrl: 'https://github.com/PaulGreetham/dagmarheinrich'
     },
     {
       id: 'card-3',
@@ -58,16 +59,17 @@ export class ProjectsComponent {
     },
     {
       id: 'card-4',
-      title: 'Project 4',
+      title: 'Personal Website',
       description: 'Description 4',
-      imageUrl: 'assets/images/project1.jpg',
+      imageUrl: 'assets/project-images/personalwebsite.png',
       techStack: [
-        { logoUrl: 'assets/logos/angular.png' },
-        { logoUrl: 'assets/logos/typescript.png' },
-        { logoUrl: 'assets/logos/css3.png' }
+        { logoUrl: 'assets/logos/Angular.png' },
+        { logoUrl: 'assets/logos/Typescript.png' },
+        { logoUrl: 'assets/logos/Node.png' },
+        { logoUrl: 'assets/logos/SCSS.png' }
       ],
-      websiteUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example/project1'
+      websiteUrl: 'https://paulgreetham.netlify.app/',
+      githubUrl: 'https://github.com/PaulGreetham/SPAPortfolio'
     },
     {
       id: 'card-5',
