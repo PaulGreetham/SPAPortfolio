@@ -18,7 +18,7 @@ export class ProjectsComponent {
     {
       id: 'card-1',
       title: 'Workout Warrior',
-      description: 'Description 1',
+      description: 'Workout Warrior allows users to search for exercise inspiration, log their gains, and watch workout videos from YouTube all in one place.',
       imageUrl: 'assets/project-images/workoutwarrior.png',
       techStack: [
         { logoUrl: 'assets/logos/React.png' },
