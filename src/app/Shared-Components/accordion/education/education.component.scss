@@ -1,18 +1,33 @@
+app-education {
+  padding: 0;
+}
+
 .education-section {
   display: flex;
   justify-content: space-between;
-  height: 60vh;
-  overflow: hidden;
+  height: 54vh;
+  // overflow: hidden;
   gap: 1rem;
   box-sizing: border-box;
-
-  h2 {
-    margin-top: 0;
-  }
 
   .column {
     width: 50%;
     box-sizing: border-box;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: rgb(249, 217, 73);
+    font-size: 1.5rem;
+    font-weight: lighter;
+
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
   }
 
   .education-container {
@@ -20,12 +35,51 @@
     overflow-y: auto;  // Allows vertical scrolling
     padding: 1rem;
     box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+
+    .education {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;  // Separates individual education entries
+      padding-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .education-logo {
+      width: 20%;
+    }
   }
 
-  .education {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;  // Separates individual education entries
-    padding-bottom: 10px;
+  .online-container {
+    height: 100%;
+    overflow-y: auto;  // Allows vertical scrolling
     box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+
+    .online {
+      border-bottom: 1px solid #ddd;
+      margin-top: 1rem;
+    }
+
+    .online-logo {
+      width: 30%;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(0.98);
+        transition: transform 0.3s;
+      }
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      font-style: italic;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
   }
 }

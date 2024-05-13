@@ -16,6 +16,5 @@ export interface onlineQualification {
   name: string;
   url: string;
   logo: string;
-  qualification: string;
   date: string;
 }
