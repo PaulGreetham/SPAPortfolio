@@ -1,0 +1,41 @@
+<section class="education-section">
+  <div class="column">
+    <h2>Formal Education</h2>
+    <div class="education-container">
+      <div *ngFor="let education of formalEducations" class="education">
+        <div class="row-header">
+          <div class="logo-column">
+            <a [href]="education.url" target="_blank">
+              <img [src]="education.logo" alt="{{ education.name }} Logo" class="education-logo">
+            </a>
+          </div>
+          <div class="info-column">
+            <h3>{{ education.name }}</h3>
+            <p>Qualification: {{ education.qualification.degree }}</p>
+            <p>Date: {{ education.startDate }} - {{ education.endDate }}</p>
+            <p>Location: {{ education.location }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h2>Online Courses</h2>
+    <div class="education-container">
+      <div *ngFor="let education of onlineCourses" class="education">
+        <div class="row-header">
+          <div class="logo-column">
+            <a [href]="education.url" target="_blank">
+              <img [src]="education.logo" alt="{{ education.name }} Logo" class="education-logo">
+            </a>
+          </div>
+          <div class="info-column">
+            <h3>{{ education.name }}</h3>
+            <p>Qualification: {{ education.qualification }}</p>
+            <p>Date: {{ education.date }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

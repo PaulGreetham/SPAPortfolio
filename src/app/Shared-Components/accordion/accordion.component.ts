@@ -6,6 +6,8 @@ import { ModalComponent } from '../modal/modal.component';
 import { StackToolsComponent, ToolItem } from '../accordion/stack-tools/stack-tools.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { BootcampsComponent } from './bootcamps/bootcamps.component';
+import { EducationSectionComponent } from './education/education.component';
+import { Qualification } from '../../models/qualification.interface';
 
 @Component({
     selector: 'app-accordion',
@@ -18,10 +20,12 @@ import { BootcampsComponent } from './bootcamps/bootcamps.component';
       StackToolsComponent,
       ProfessionalComponent,
       BootcampsComponent,
+      EducationSectionComponent
     ]
 })
 export class AccordionComponent {
   @Input() accordionItems: AccordionItem[] = [];
+  @Input() education: Qualification[] = [];
 
   openSection: string | null = null;
   openModalItem: string | null = null;

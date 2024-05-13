@@ -20,6 +20,10 @@
         [infrequentlyUsedTools]="item.content.infrequentlyUsed">
       </app-stack-tools>
 
+      <app-education
+        *ngIf="item.title === 'Education'">
+      </app-education>
+
       <app-professional
         *ngIf="item.title === 'Professional'"
         [item]="item"

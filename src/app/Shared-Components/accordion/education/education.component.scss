@@ -1,0 +1,31 @@
+.education-section {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  overflow: hidden;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .column {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .education-container {
+    height: 60vh;
+    overflow-y: auto;  // Allows vertical scrolling
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .education {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;  // Separates individual education entries
+    padding-bottom: 10px;
+    box-sizing: border-box;
+  }
+}
