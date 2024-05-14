@@ -54,7 +54,7 @@ export class EducationSectionComponent {
       name: "Reactive Angular Course (RxJs, Angular 17)",
       url: "https://www.udemy.com/certificate/UC-d0630dce-71a4-467b-bf9f-e76d585ba4ab/",
       logo: "/assets/logos/Udemy.png",
-      date: 'May 2023'
+      date: 'May 2024'
     },
     {
       name: "Angular - The Complete Guide (2023 Edition)",

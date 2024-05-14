@@ -7,10 +7,12 @@ app-education {
   justify-content: space-between;
   height: 54vh;
   overflow: hidden;
-  gap: 1rem;
+  gap: 4rem;
   box-sizing: border-box;
 
   .column {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     box-sizing: border-box;
   }
@@ -26,7 +28,7 @@ app-education {
     font-weight: lighter;
 
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 1rem;
   }
 
@@ -35,7 +37,6 @@ app-education {
     overflow-y: auto;  // Allows vertical scrolling
     padding: 1rem;
     box-sizing: border-box;
-    border-bottom: 1px solid #ddd;
 
     .education {
       margin-bottom: 10px;
@@ -53,15 +54,18 @@ app-education {
     height: 100%;
     overflow-y: auto;  // Allows vertical scrolling
     box-sizing: border-box;
-    border-bottom: 1px solid #ddd;
 
     .online {
       border-bottom: 1px solid #ddd;
-      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+
+    .online:last-child {
+      border-bottom: none;
     }
 
     .online-logo {
-      width: 30%;
+      width: 20%;
       transition: transform 0.3s;
 
       &:hover {
@@ -71,7 +75,7 @@ app-education {
     }
 
     h4 {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 0;
     }
 
