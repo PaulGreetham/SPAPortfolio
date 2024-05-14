@@ -4,12 +4,11 @@ export interface Qualification {
   logo: string;
   qualification: {
     degree: string;
+    grade: string;
   };
   startDate: string;
   endDate: string;
   location: string;
-  info: string;
-  contentList: string[];
 }
 
 export interface onlineQualification {

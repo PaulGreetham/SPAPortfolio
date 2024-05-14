@@ -19,34 +19,12 @@ export class EducationSectionComponent {
       url: "https://www.mmu.ac.uk/",
       logo: "/assets/logos/MMUlogo.png",
       qualification: {
-        degree: "Bachelor of Science in Computer Science"
+        degree: "BA(Hons) English Literature & Language",
+        grade: "2:1",
       },
-      startDate: "2015",
-      endDate: "2019",
-      location: "Example City, Country",
-      info: "Details about the course and university experience.",
-      contentList: [
-        "Achieved a 4.0 GPA",
-        "Completed a capstone project on software development",
-        "Participated in student tech clubs"
-      ]
-    },
-    {
-      name: "Manchester Metropolitan University",
-      url: "https://www.mmu.ac.uk/",
-      logo: "/assets/logos/MMUlogo.png",
-      qualification: {
-        degree: "Bachelor of Science in Computer Science"
-      },
-      startDate: "2015",
-      endDate: "2019",
-      location: "Example City, Country",
-      info: "Details about the course and university experience.",
-      contentList: [
-        "Achieved a 4.0 GPA",
-        "Completed a capstone project on software development",
-        "Participated in student tech clubs"
-      ]
+      startDate: "September 2003",
+      endDate: "June 2006",
+      location: "Manchester, UK",
     },
   ];
   onlineCourses: onlineQualification[] = [
