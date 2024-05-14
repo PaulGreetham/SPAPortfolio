@@ -12,7 +12,7 @@ export class BootcampsComponent {
   bootcamps = [
     {
       logo: '/assets/logos/SALT.webp',
-      name: '</SALT> School of Applied Learning Technology',
+      name: '</SALT>',
       url: 'https://www.salt.dev',
       startDate: 'January 2023',
       endDate: 'March 2023',
