@@ -22,7 +22,7 @@ h1 {
   margin: 0;
   letter-spacing: 0.25rem;
 
-  animation: fadeInFromTop 0.25s ease-in-out;
+  animation: fadeInFromTop 0.3s ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -48,7 +48,7 @@ h1 {
     align-items: flex-end;
     background-color: white;
     width: 30%;
-    padding: 2rem;
+    padding: 3rem;
 
     .navigate-to-about-button {
       position: absolute;
@@ -91,7 +91,7 @@ h1 {
     gap: 1rem;
     width: 70%;
     padding-right: 0;
-    padding-block: 2rem;
+    padding-block: 3rem;
 
     h2 {
       position: relative;

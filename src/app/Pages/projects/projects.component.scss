@@ -39,8 +39,8 @@ h1 {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); // Creates two columns
-  margin: 2rem;
   height: 66vh;
+  padding: 3rem;
   gap: 2rem;
 }
 
