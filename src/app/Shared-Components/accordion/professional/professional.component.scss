@@ -13,15 +13,11 @@
     justify-content: center;
     align-items: center;
 
-    height: 35%;
+    height: 40%;
     width: 100%;
 
     .logo-column {
-      display: flex;
-      justify-content: center;
-
       height: 100%;
-      width: 20%;
 
       .company-logo {
         height: 100%;
@@ -49,57 +45,88 @@
       };
     }
   }
-}
 
-.info-section {
-  column-count: 2;
-}
+  .button-section {
+    display: flex;
+    height: 20%;
+    gap: 1rem;
 
-.commit-list {
-  margin-top: 2rem;
+    .modal-open-button {
+      font-family: $primary-font;
+      border: none;
+      background: none;
+      font-size: 1rem;
+      padding: 0.5rem;
+      width: 50%;
+      color: white;
+      background-color: rgb(60, 72, 107);
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
 
-  ul {
-    list-style: none;
-    padding: 0;
+      &:hover {
+        scale: 0.97;
+        transition: 0.3s ease-in-out;
+      }
+    }
 
-    li {
-      padding: 2rem;
+    .gitLab-button {
+      font-family: $primary-font;
+      border: none;
+      background: none;
+      font-size: 1rem;
+      padding: 0.5rem;
+      width: 50%;
+      color: white;
+      background-color: rgb(60, 72, 107);
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
 
-      &:nth-child(odd) {  // Styles for odd-numbered items
-        color: white;
-        background-color: rgb(60, 72, 107); // White background
+      &:hover {
+        scale: 0.97;
+        transition: 0.3s ease-in-out;
       }
 
-      &:nth-child(even) { // Styles for even-numbered items
-        background-color: white; // Light blue background
-      }
-
-      h4 {
-        margin: 0;
-      }
-
-      p {
-        margin: 0;
-        font-weight: lighter;
+      i {
+        font-size: 1.25rem;
+        margin-left: 0.5em;
       }
     }
   }
-}
 
-.modal-open-button {
-  font-family: $primary-font;
-  border: none;
-  background: none;
-  font-size: 1rem;
-  padding: 0.5rem;
-  color: white;
-  background-color: rgb(60, 72, 107);
-  width: max-content;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
+  .info-section {
+    height: 40%;
+    column-count: 2;
+  }
 
-  &:hover {
-    scale: 0.97;
-    transition: 0.3s ease-in-out;
+  .commit-list {
+    margin-top: 2rem;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 2rem;
+
+        &:nth-child(odd) {  // Styles for odd-numbered items
+          color: white;
+          background-color: rgb(60, 72, 107); // White background
+        }
+
+        &:nth-child(even) { // Styles for even-numbered items
+          background-color: white; // Light blue background
+        }
+
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin: 0;
+          font-weight: lighter;
+        }
+      }
+    }
   }
 }
