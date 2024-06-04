@@ -15,25 +15,12 @@ app-card {
   animation: fadeInFromBottom 0.5s ease-out forwards;
   transition: transform 0.3s ease;
 
-  .project-image-container {
-    height: 100%;
-    width: 30%;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%; // Ensures the image covers the full height of its container
-      object-fit: cover; // Ensures the image covers the area without distorting aspect ratio
-      object-position: center; // Centers the image within its frame
-    }
-  }
-
   .details {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    width: 40%;
+    width: 50%;
 
     h3 {
       font-size: 1rem;
@@ -50,18 +37,19 @@ app-card {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 30%;
+    width: 50%;
     gap: 0.5rem;
 
     .tech-stack {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      height: 35%;
+      flex-wrap: wrap;
 
       .tech-item {
         display: flex;
         align-items: center;
+        padding: 0.2rem;
 
         .tech-logo {
           width: 2rem;
@@ -71,14 +59,13 @@ app-card {
 
     .external-links {
       display: flex;
-      flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      height: 65%;
       gap: 0.5rem;
 
       button {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         color: white;
@@ -104,7 +91,6 @@ app-card {
 
         i {
           font-size: 1rem;
-          padding-left: 0.5rem;
         }
       }
     }

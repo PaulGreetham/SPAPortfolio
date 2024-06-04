@@ -1,7 +1,4 @@
 <div class="card" [id]="cardId">
-  <section class="project-image-container">
-    <img src="{{ content.imageUrl }}" alt="{{ content.title }} image">
-  </section>
 
   <section class="details">
     <h3>{{ content.title }}</h3>
@@ -16,8 +13,8 @@
     </section>
 
     <section class="external-links">
-      <button><a href="{{ content.websiteUrl }}" target="_blank" rel="noopener">Visit Website</a><i class="fa-solid fa-window-maximize"></i></button>
-      <button><a href="{{ content.githubUrl }}" target="_blank" rel="noopener">GitHub Repo</a><i class="fab fa-github"></i></button>
+      <button><a href="{{ content.websiteUrl }}" target="_blank" rel="noopener">Website</a><i class="fa-solid fa-window-maximize"></i></button>
+      <button><a href="{{ content.githubUrl }}" target="_blank" rel="noopener">GitHub</a><i class="fab fa-github"></i></button>
     </section>
   </section>
 </div>
