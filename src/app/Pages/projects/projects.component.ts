@@ -21,11 +21,11 @@ export class ProjectsComponent {
         { logoUrl: 'assets/logos/React.png' },
         { logoUrl: 'assets/logos/Javascript.png' },
         { logoUrl: 'assets/logos/Node.png' },
+        { logoUrl: 'assets/logos/Youtube.png' },
+        { logoUrl: 'assets/logos/HTML.png' },
         { logoUrl: 'assets/logos/CSS.png' },
-        { logoUrl: 'assets/logos/React.png' },
-        { logoUrl: 'assets/logos/Javascript.png' },
-        { logoUrl: 'assets/logos/Node.png' },
-        { logoUrl: 'assets/logos/CSS.png' }
+        { logoUrl: 'assets/logos/Github.png' },
+        { logoUrl: 'assets/logos/Netlify.png' }
       ],
       websiteUrl: 'https://workout-warrior.netlify.app/',
       githubUrl: 'https://github.com/PaulGreetham/workout-warrior'
@@ -38,7 +38,11 @@ export class ProjectsComponent {
         { logoUrl: 'assets/logos/Angular.png' },
         { logoUrl: 'assets/logos/Typescript.png' },
         { logoUrl: 'assets/logos/Node.png' },
-        { logoUrl: 'assets/logos/SCSS.png' }
+        { logoUrl: 'assets/logos/HTML.png' },
+        { logoUrl: 'assets/logos/SCSS.png' },
+        { logoUrl: 'assets/logos/Github.png' },
+        { logoUrl: 'assets/logos/Netlify.png' }
+
       ],
       websiteUrl: 'https://dagmarheinrich.netlify.app/',
       githubUrl: 'https://github.com/PaulGreetham/dagmarheinrich'
