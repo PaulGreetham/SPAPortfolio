@@ -96,14 +96,14 @@ h1 {
 
     .tech-stack {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
 
       .tech-item {
         display: flex;
         align-items: center;
-        padding: 0.2rem;
+        padding: 0.25rem;
 
         .tech-logo {
           width: 2rem;
