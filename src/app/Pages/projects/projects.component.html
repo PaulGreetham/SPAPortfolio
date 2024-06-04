@@ -12,7 +12,9 @@
     <section class="end-section">
       <section class="tech-stack">
         <div *ngFor="let tech of card.techStack" class="tech-item">
-          <img src="{{ tech.logoUrl }}" alt="Logo" class="tech-logo">
+          <a *ngIf="tech.websiteUrl" [href]="tech.websiteUrl" target="_blank">
+            <img src="{{ tech.logoUrl }}" alt="Logo" class="tech-logo">
+          </a>
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 export interface TechStackItem {
   logoUrl: string;
+  websiteUrl: string;
 }
 
 export interface ProjectCard {
