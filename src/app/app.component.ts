@@ -12,7 +12,6 @@ import { StackToolsComponent } from './Shared-Components/accordion/stack-tools/s
 import { ProfessionalComponent } from './Shared-Components/accordion/professional/professional.component';
 import { BootcampsComponent } from './Shared-Components/accordion/bootcamps/bootcamps.component';
 
-
 @Component({
     selector: 'app-root',
     standalone: true,
