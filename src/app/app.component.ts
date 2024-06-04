@@ -7,7 +7,6 @@ import { TechComponent } from './Pages/tech/tech.component';
 import { ProjectsComponent } from './Pages/projects/projects.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { NavbarComponent } from "./Shared-Components/navbar/navbar.component";
-import { CardComponent } from './Shared-Components/card/card.component';
 import { ModalComponent } from './Shared-Components/modal/modal.component';
 import { StackToolsComponent } from './Shared-Components/accordion/stack-tools/stack-tools.component';
 import { ProfessionalComponent } from './Shared-Components/accordion/professional/professional.component';
@@ -29,7 +28,6 @@ import { BootcampsComponent } from './Shared-Components/accordion/bootcamps/boot
       ProjectsComponent,
       ContactComponent,
       NavbarComponent,
-      CardComponent,
       StackToolsComponent,
       ProfessionalComponent,
       BootcampsComponent,

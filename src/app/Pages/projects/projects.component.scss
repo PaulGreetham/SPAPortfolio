@@ -37,6 +37,14 @@ h1 {
 }
 
 .projects-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -45,6 +53,117 @@ h1 {
   gap: 2rem;
 }
 
-// app-card {
-//   // If necessary, define specific styles or overrides for the card here
-// }
+.card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  height: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  opacity: 0;
+  animation: fadeInFromBottom 0.5s ease-out forwards;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 50%;
+
+    h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.6rem;
+    }
+  }
+
+  .end-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+    gap: 0.5rem;
+
+    .tech-stack {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .tech-item {
+        display: flex;
+        align-items: center;
+        padding: 0.2rem;
+
+        .tech-logo {
+          width: 2rem;
+        }
+      }
+    }
+
+    .external-links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+
+      button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: rgb(60, 72, 107);
+        font-family: $primary-font;
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 0.35rem;
+        border: none;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        animation: fadeInFromLeft 0.5s ease-out forwards;
+
+        &:hover {
+          transform: scale(0.98);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        i {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 6 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: #{0.5s + ($i - 1) * 0.25s};
+    }
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

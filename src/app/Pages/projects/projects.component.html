@@ -1,8 +1,31 @@
-
 <header>
-  <h1>projects</h1>
+  <h1>Projects</h1>
 </header>
 
-<div class="projects-container">
-  <app-card *ngFor="let card of cards" [content]="card" [cardId]="card.id"></app-card>
+<div class="card-container">
+  <div class="card" *ngFor="let card of cards; let i = index" [id]="card.id">
+    <section class="details">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
+    </section>
+
+    <section class="end-section">
+      <section class="tech-stack">
+        <div *ngFor="let tech of card.techStack" class="tech-item">
+          <img src="{{ tech.logoUrl }}" alt="Logo" class="tech-logo">
+        </div>
+      </section>
+
+      <section class="external-links">
+        <button>
+          <a href="{{ card.websiteUrl }}" target="_blank" rel="noopener">Website</a>
+          <i class="fa-solid fa-window-maximize"></i>
+        </button>
+        <button>
+          <a href="{{ card.githubUrl }}" target="_blank" rel="noopener">GitHub</a>
+          <i class="fab fa-github"></i>
+        </button>
+      </section>
+    </section>
+  </div>
 </div>

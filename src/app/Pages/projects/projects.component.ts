@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardComponent } from '../../Shared-Components/card/card.component';
 import { ProjectCard } from '../../models/project-card.interface';
 
 @Component({
@@ -9,8 +8,7 @@ import { ProjectCard } from '../../models/project-card.interface';
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.scss',
     imports: [
-      CommonModule,
-      CardComponent,
+      CommonModule
     ]
 })
 export class ProjectsComponent {
