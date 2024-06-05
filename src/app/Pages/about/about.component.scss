@@ -11,7 +11,7 @@ header {
   align-items: center;
   color: white;
   background-color: rgb(244, 80, 80);;
-  height: 22vh;
+  height: 24vh;
   padding: 3rem;
 }
 
@@ -40,8 +40,8 @@ h1 {
 .about-me-container {
   display: flex;
   align-items: flex-start;
-  height: 68vh;
-  padding: 3rem;
+  height: 66vh;
+  padding: 2rem 3rem 2rem 3rem;
 
   .text-column {
     position: relative;
@@ -52,7 +52,7 @@ h1 {
 
     .all-section-content {
       overflow-y: auto;
-      max-height: calc(58vh - 6rem);
+      max-height: calc(60vh - 6rem);
 
       .fade-effect-overlay {
         content: '';
