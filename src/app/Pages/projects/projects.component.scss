@@ -11,7 +11,7 @@ header {
   align-items: center;
   color: white;
   background-color: rgb(244, 80, 80);
-  height: 24vh;
+  height: 22vh;
   padding: 3rem;
 }
 
@@ -36,20 +36,12 @@ h1 {
   }
 }
 
-.projects-container {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  padding: 3rem;
-  gap: 2rem;
-}
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 100%;
-  padding: 3rem;
+  height: 68vh;
+  padding: 2rem 3rem 2rem 3rem;
   gap: 2rem;
 }
 
