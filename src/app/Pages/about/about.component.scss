@@ -41,7 +41,7 @@ h1 {
   display: flex;
   align-items: flex-start;
   height: 66vh;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 3rem 3rem 3rem;
 
   .text-column {
     position: relative;
@@ -52,7 +52,7 @@ h1 {
 
     .all-section-content {
       overflow-y: auto;
-      max-height: calc(60vh - 6rem);
+      height: calc(60vh - 6rem);
 
       .fade-effect-overlay {
         content: '';
