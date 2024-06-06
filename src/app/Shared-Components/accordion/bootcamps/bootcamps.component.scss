@@ -12,7 +12,7 @@ app-bootcamps {
   .bootcamp {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     height: 100%;
     width: 45%;
@@ -20,17 +20,17 @@ app-bootcamps {
     .row-header {
       display: flex;
       justify-content: flex-start;
+      height: 30%;
 
       .logo-column {
         display: flex;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
 
         .bootcamp-logo {
-          max-width: 7rem;
+          max-width: 6rem;
           height: auto;
           display: block;
-          margin: 0 auto 10px; // Center logo with margin at the bottom
           transition: transform 0.3s;
 
           &:hover {
@@ -43,7 +43,6 @@ app-bootcamps {
       .info-column {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         justify-content: flex-end;
         padding-left: 1rem;
         width: 100%;
