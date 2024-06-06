@@ -84,13 +84,12 @@
 
   .tech-logos {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-block: 1rem;
 
     .tech-logo {
-      height: 3rem;
+      height: 2.25rem;
       transition: transform 0.3s;
 
       &:hover {

@@ -50,7 +50,20 @@ app-education {
     }
 
     .education-logo {
-      width: 75%;
+      width: 60%;
+    }
+
+    .info-column {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin-top: 0;
+      }
+
+      p {
+        margin: 0.1rem;
+      }
     }
   }
 
