@@ -36,7 +36,7 @@ export class ProfessionalComponent {
     logoUrl: '/assets/logos/RiskChallenger.jpeg',
     companyName: 'RiskChallenger',
     companyWebsite: 'https://www.riskchallenger.nl/',
-    jobTitle: 'Junior Full-Stack Software Developer',
+    jobTitle: 'Full-Stack Software Developer',
     contract: 'Permanent | Full-Time',
     startDate: 'April 2023',
     endDate: 'Present',

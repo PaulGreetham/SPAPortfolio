@@ -16,18 +16,21 @@
     </div>
   </div>
 
-  <div class="button-section">
-    <button (click)="toggleModal()" class="modal-open-button">Merge Request History</button>
-    <button class="gitLab-button" onclick="window.open('https://gitlab.com/PaulGreetham', '_blank')">GitLab
-      <i class="fab fa-gitlab"></i>
-    </button>
-  </div>
-
   <div class="info-section">
     <p>{{ jobReference.info }}</p>
     <ul>
       <li *ngFor="let item of jobReference.dutiesAndTools">{{ item }}</li>
     </ul>
+  </div>
+
+  <div class="button-section">
+    <button (click)="toggleModal()" class="modal-open-button">Merge Request History</button>
+    <button class="gitLab-button" onclick="window.open('https://gitlab.com/PaulGreetham', '_blank')">GitLab
+      <i class="fab fa-gitlab"></i>
+    </button>
+    <button class="cv-button" onclick="window.open('/assets/paulgreetham_cv.pdf', '_blank')">Open CV
+      <i class="fas fa-file-pdf"></i>
+    </button>
   </div>
 
   <div *ngIf="item.title === 'Professional'" class="content">

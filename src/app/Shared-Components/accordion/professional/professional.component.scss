@@ -3,28 +3,26 @@
 .professional-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 
   .header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
-    height: 40%;
     width: 100%;
 
     .logo-column {
       height: 100%;
 
       .company-logo {
-        height: 100%;
+        width: 100%;
         transition: transform 0.3s;
 
         &:hover {
-          transform: scale(0.95);
+          transform: scale(0.98);
           transition: transform 0.3s;
         }
       }
@@ -33,7 +31,6 @@
     .details-column {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
 
       height: 100%;
       width: 100%;
@@ -48,34 +45,15 @@
 
   .button-section {
     display: flex;
-    height: 20%;
     gap: 1rem;
 
-    .modal-open-button {
+    button {
       font-family: $primary-font;
       border: none;
       background: none;
       font-size: 1rem;
-      padding: 0.5rem;
-      width: 50%;
-      color: white;
-      background-color: rgb(60, 72, 107);
-      transition: 0.3s ease-in-out;
-      cursor: pointer;
-
-      &:hover {
-        scale: 0.97;
-        transition: 0.3s ease-in-out;
-      }
-    }
-
-    .gitLab-button {
-      font-family: $primary-font;
-      border: none;
-      background: none;
-      font-size: 1rem;
-      padding: 0.5rem;
-      width: 50%;
+      padding: 1rem;
+      width: 100%;
       color: white;
       background-color: rgb(60, 72, 107);
       transition: 0.3s ease-in-out;
@@ -94,8 +72,8 @@
   }
 
   .info-section {
-    height: 40%;
     column-count: 2;
+    height: 60%
   }
 
   .commit-list {
