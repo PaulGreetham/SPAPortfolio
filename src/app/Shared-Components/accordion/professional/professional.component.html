@@ -18,13 +18,21 @@
 
   <div class="info-section">
     <p>{{ jobReference.info }}</p>
-    <ul>
-      <li *ngFor="let item of jobReference.dutiesAndTools">{{ item }}</li>
-    </ul>
+    <div class="tech-logos">
+      <img src="/assets/logos/Angular.png" alt="Angular" class="tech-logo">
+      <img src="/assets/logos/Typescript.png" alt="TypeScript" class="tech-logo">
+      <img src="/assets/logos/Node.png" alt="Node.js" class="tech-logo">
+      <img src="/assets/logos/HTML.png" alt="Angular" class="tech-logo">
+      <img src="/assets/logos/SCSS.png" alt="TypeScript" class="tech-logo">
+      <img src="/assets/logos/Github.png" alt="Node.js" class="tech-logo">
+      <img src="/assets/logos/RxJS.png" alt="Angular" class="tech-logo">
+      <img src="/assets/logos/SQL.png" alt="TypeScript" class="tech-logo">
+      <img src="/assets/logos/VSCode.png" alt="Node.js" class="tech-logo">
+    </div>
   </div>
 
   <div class="button-section">
-    <button (click)="toggleModal()" class="modal-open-button">Merge Request History</button>
+    <button (click)="toggleModal()" class="modal-open-button">MR History</button>
     <button class="gitLab-button" onclick="window.open('https://gitlab.com/PaulGreetham', '_blank')">GitLab
       <i class="fab fa-gitlab"></i>
     </button>

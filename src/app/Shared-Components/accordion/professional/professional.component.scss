@@ -38,7 +38,7 @@
       padding-left: 2rem;
 
       p {
-        margin: 0.1rem;
+        margin: 0.0.5rem;
       };
     }
   }
@@ -72,11 +72,31 @@
   }
 
   .info-section {
+    display: flex;
+    flex-direction: column;
     height: 60%;
 
     p {
       font-size: 0.9rem;
       font-weight: lighter;
+    }
+  }
+
+  .tech-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .tech-logo {
+      height: 3rem;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+      }
     }
   }
 

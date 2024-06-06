@@ -12,7 +12,6 @@ export interface JobReference {
   endDate: string;
   location: string;
   info: string;
-  dutiesAndTools: string[];
 }
 
 export interface GitCommit {
@@ -42,7 +41,6 @@ export class ProfessionalComponent {
     endDate: 'Present',
     location: 'Amersfoort, The Netherlands',
     info: 'RiskChallenger is a SaaS scale-up specialising in risk management software. Clients include Boskalis, Van Gelder, Van Oord, Alliander, Count & Cooper, as well as various Ministries of the Netherlands. My role within the software team is to fix bugs, create issues within Gitlab, identify technical and operational improvements, and undertake code reviews. The current tech stack is:',
-    dutiesAndTools: ['Using Angular & TypeScript'],
   };
 
   openModalItem: string | null = null;
