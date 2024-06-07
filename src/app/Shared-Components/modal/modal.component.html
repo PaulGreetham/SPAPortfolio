@@ -1,5 +1,5 @@
-<div class="modal" *ngIf="display">
-  <div class="modal-dialog">
+<div class="modal" *ngIf="display" (mousedown)="onModalClick($event)">
+  <div class="modal-dialog" #modalDialog>
     <div class="modal-header">
       <button type="button" class="close" aria-label="Close" (click)="close()">
         <span aria-hidden="true">Close</span>
