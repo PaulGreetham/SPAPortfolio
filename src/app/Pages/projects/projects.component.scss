@@ -170,7 +170,7 @@ h1 {
       align-items: center;
       gap: 0.5rem;
 
-      button {
+      .button-link {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -184,16 +184,12 @@ h1 {
         border: none;
         transition: transform 0.3s ease-in-out;
         cursor: pointer;
+        text-decoration: none;
         animation: fadeInFromLeft 0.5s ease-out forwards;
 
         &:hover {
           transform: scale(0.98);
           transition: transform 0.3s ease-in-out;
-        }
-
-        a {
-          color: white;
-          text-decoration: none;
         }
 
         i {
