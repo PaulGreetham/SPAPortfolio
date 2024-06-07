@@ -57,6 +57,21 @@ export class ProfessionalComponent {
 
   gitCommits: GitCommit[] = [
     {
+      title: 'Add scrolling to individual columns in variable tabs',
+      type: 'Front-End',
+      description: 'This commit adds scrolling to individual columns in the mce tabs, whilst the rest of the modal is fixed. This is to prevent the entire modal from scrolling when the user scrolls within the mce tab.'
+    },
+    {
+      title: 'Make project name more visible on map page',
+      type: 'Front-End',
+      description: 'This commit makes the project name more visible on the map page by changing the background color of the project name and arrow icon.'
+    },
+    {
+      title: 'Remove description input when qualitative option is selected',
+      type: 'Front-End',
+      description: 'This commit removes the description input when the qualitative option is selected. This is because the description input is not needed when the qualitative option is selected.'
+    },
+    {
       title: 'Stop risk text from overlapping info icon',
       type: 'Front-End',
       description: 'This commit adds a background to the info icon in the navigation bar to prevent the risk text from overlapping it.'
