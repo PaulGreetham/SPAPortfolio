@@ -85,15 +85,16 @@
   .tech-logos {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
     margin-block: 1rem;
 
     .tech-logo {
-      height: 2.25rem;
+      height: 2.5rem;
       transition: transform 0.3s;
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(0.97);
         transition: transform 0.3s;
       }
     }
