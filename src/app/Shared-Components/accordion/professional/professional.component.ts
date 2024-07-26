@@ -57,13 +57,8 @@ export class ProfessionalComponent {
 
   gitCommits: GitCommit[] = [
     {
-      title: 'Reposition save icon in dashboard',
-      type: 'Front-End',
-      description: 'This commit repositions the save icon in the dashboard to be more visible to the user.'
-    },
-    {
       title: 'Create new feature for users to give or receive feedback',
-      type: 'Front-End',
+      type: 'Full-Stack',
       description: 'This commit adds a new modal to open when the user clicks on the feedback button. The modal allows the user to give or receive feedback. A new tab within the account app is also added so the user can create templates for the feedback emails.'
     },
     {
@@ -75,6 +70,11 @@ export class ProfessionalComponent {
       title: 'Add user message for facilitator disconnect in vote app',
       type: 'Front-End',
       description: 'This commit introduces an overlay page and displays a pause page when the facilitator has disconnected. It also logs out the participant when the facilitator has logged off.'
+    },
+    {
+      title: 'Reposition save icon in dashboard',
+      type: 'Front-End',
+      description: 'This commit repositions the save icon in the dashboard to be more visible to the user.'
     },
     {
       title: 'Add scrolling to individual columns in variable tabs',
@@ -149,17 +149,17 @@ export class ProfessionalComponent {
     {
       title: 'Add component tests for profile-modal component',
       type: 'Testing',
-      description: 'App used legacy node-excel-export dependency. This commit replaces it with the more modern xlsx dependency.'
+      description: 'This commit adds component tests for the profile-modal component.'
     },
     {
       title: 'Add component tests for finished-page component',
       type: 'Testing',
-      description: 'Disabled button when variable is enabled. This commit removes the button from the UI when the variable is enabled.'
+      description: 'This commit adds component tests for the finished-page component.'
     },
     {
       title: 'Add component tests for variable-modal component',
       type: 'Testing',
-      description: 'This commit adds component tests for the variable modal component.'
+      description: 'This commit adds component tests for the variable-modal component.'
     },
     {
       title: 'Update english translation of file to register',
