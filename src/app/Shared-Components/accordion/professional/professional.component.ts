@@ -57,6 +57,26 @@ export class ProfessionalComponent {
 
   gitCommits: GitCommit[] = [
     {
+      title: 'Reposition save icon in dashboard',
+      type: 'Front-End',
+      description: 'This commit repositions the save icon in the dashboard to be more visible to the user.'
+    },
+    {
+      title: 'Create new feature for users to give or receive feedback',
+      type: 'Front-End',
+      description: 'This commit adds a new modal to open when the user clicks on the feedback button. The modal allows the user to give or receive feedback. A new tab within the account app is also added so the user can create templates for the feedback emails.'
+    },
+    {
+      title: 'Add validators to variable fields and disable plus icon',
+      type: 'Front-End',
+      description: 'This commit adds validators to the mce fields in the risk modal. If the input field is marked as invalid, the plus icon is disabled. This commit also disables the plus icon if the input field is empty.'
+    },
+    {
+      title: 'Add user message for facilitator disconnect in vote app',
+      type: 'Front-End',
+      description: 'This commit introduces an overlay page and displays a pause page when the facilitator has disconnected. It also logs out the participant when the facilitator has logged off.'
+    },
+    {
       title: 'Add scrolling to individual columns in variable tabs',
       type: 'Front-End',
       description: 'This commit adds scrolling to individual columns in the mce tabs, whilst the rest of the modal is fixed. This is to prevent the entire modal from scrolling when the user scrolls within the mce tab.'
